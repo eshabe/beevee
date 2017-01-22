@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="BV2" />
+		<Option pch_mode="0" />
+		<Option compiler="mingw32_compiler" />
+		<Build>
+			<Target title="Win32 Release">
+				<Option output="../../Obj/Release/BeeVee.exe" prefix_auto="0" extension_auto="0" />
+				<Option working_dir="../BV2" />
+				<Option object_output="../../Obj/Release" />
+				<Option type="0" />
+				<Option compiler="mingw32_compiler" />
+				<Option projectResourceIncludeDirsRelation="0" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-W" />
+					<Add option="-fexceptions" />
+					<Add option="-DWIN32" />
+					<Add option="-DNDEBUG" />
+					<Add option="-D_WINDOWS" />
+					<Add option="-D_MBCS" />
+					<Add option="-D_WIN32" />
+				</Compiler>
+			</Target>
+			<Target title="Win32 Debug">
+				<Option output="../../Obj/Debug/BeeVee.exe" prefix_auto="0" extension_auto="0" />
+				<Option working_dir="../BV2" />
+				<Option object_output="../../Obj/Debug" />
+				<Option type="0" />
+				<Option compiler="mingw32_compiler" />
+				<Option projectResourceIncludeDirsRelation="0" />
+				<Compiler>
+					<Add option="-W" />
+					<Add option="-g" />
+					<Add option="-fexceptions" />
+					<Add option="-DWIN32" />
+					<Add option="-D_DEBUG" />
+					<Add option="-D_WINDOWS" />
+					<Add option="-D_MBCS" />
+					<Add option="-D_BETAVERSION" />
+					<Add option="-D_BEEVEE_VERBOSE_" />
+				</Compiler>
+			</Target>
+		</Build>
+		<VirtualTargets>
+			<Add alias="All" targets="Win32 Release;Win32 Debug;" />
+		</VirtualTargets>
+		<Linker>
+			<Add option="-lstdc++" />
+			<Add option="-lgcc" />
+			<Add option="-lodbc32" />
+			<Add option="-lwsock32" />
+			<Add option="-lwinspool" />
+			<Add option="-lwinmm" />
+			<Add option="-lshell32" />
+			<Add option="-lcomctl32" />
+			<Add option="-lcomdlg32" />
+			<Add option="-lctl3d32" />
+			<Add option="-ladvapi32" />
+			<Add option="-lopengl32" />
+			<Add option="-lglu32" />
+			<Add option="-lole32" />
+			<Add option="-loleaut32" />
+			<Add option="-luuid" />
+			<Add option="-lgdi32" />
+		</Linker>
+		<Unit filename="BV2.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="BV2.h" />
+		<Unit filename="BV2.rc">
+			<Option compilerVar="WINDRES" />
+		</Unit>
+		<Unit filename="bv2connect.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="bv2connect.h" />
+		<Unit filename="bv2devicendlg.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="bv2draw.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="bv2draw.h" />
+		<Unit filename="bv2editdev.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="bv2explacement.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="bv2explacement.h" />
+		<Unit filename="bv2find.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="bv2find.h" />
+		<Unit filename="bv2findex.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="bv2import.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="bv2import.h" />
+		<Unit filename="bv2loadex.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="bv2loadex.h" />
+		<Unit filename="bv2merge.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="bv2mergedlg.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="bv2mergedlg.h" />
+		<Unit filename="bv2object.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="bv2object.h" />
+		<Unit filename="bv2offsetdlg.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="bv2offsetdlg.h" />
+		<Unit filename="bv2option.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="bv2option.h" />
+		<Unit filename="bv2placement.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="bv2placement.h" />
+		<Unit filename="bv2properties.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="bv2recents.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="bv2recents.h" />
+		<Unit filename="bv2toolbar.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="bv2toolbar.h" />
+		<Unit filename="bv2unit.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="bv2winmain.h" />
+		<Unit filename="licence.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="resource.h" />
+		<Unit filename="signalndlg.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="signalndlg.h" />
+		<Unit filename="statusbar.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="statusbar.h" />
+		<Unit filename="toolbox.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="toolbox.h" />
+		<Unit filename="version.h">
+			<Option target="Win32 Debug" />
+		</Unit>
+		<Unit filename="../bv2data/ag3070file.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../bv2data/ag3070file.h" />
+		<Unit filename="../bv2data/agsj50file.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../bv2data/agsj50file.h" />
+		<Unit filename="../bv2data/beeveefile.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../bv2data/beeveefile.h" />
+		<Unit filename="../bv2data/bomattr.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../bv2data/bomattr.h" />
+		<Unit filename="../bv2data/cmpdevs.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../bv2data/cmpdevs.h" />
+		<Unit filename="../bv2data/export.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../bv2data/export.h" />
+		<Unit filename="../bv2data/fabfile.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../bv2data/fabfile.h" />
+		<Unit filename="../bv2data/gencadfile.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../bv2data/gencadfile.h" />
+		<Unit filename="../bv2data/generalxy.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../bv2data/generalxy.h" />
+		<Unit filename="../bv2data/genrad228xfile.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../bv2data/genrad228xfile.h" />
+		<Unit filename="../bv2data/movebrd.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../bv2data/placefile.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../bv2data/placefile.h" />
+		<Unit filename="../bv2data/ppcbfile.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../bv2data/ppcbfile.h" />
+		<Unit filename="../bv2data/sboard.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../bv2data/sboard.h" />
+		<Unit filename="../bv2data/unicampcb.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../bv2data/unicampcb.h" />
+		<Unit filename="../bv2data/unitconv.h" />
+		<Unit filename="../sdata_c/sdata.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../sdata_c/sdata.h" />
+		<Unit filename="../sdata_c/sdatateks.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../sdata_c/sdatateks.h" />
+		<Unit filename="../slog_c/slog.c">
+			<Option compilerVar="CC" />
+			<Option target="Win32 Debug" />
+		</Unit>
+		<Unit filename="../slog_c/slog.h">
+			<Option target="Win32 Debug" />
+		</Unit>
+		<Unit filename="../steks_c/stext.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../steks_c/stext.h" />
+		<Extensions>
+			<envvars />
+			<code_completion />
+			<debugger />
+			<lib_finder disable_auto="1" />
+			<AutoVersioning>
+				<Scheme minor_max="10" build_max="0" rev_max="0" rev_rand_max="10" build_times_to_increment_minor="100" />
+				<Settings autoincrement="1" date_declarations="0" do_auto_increment="0" ask_to_increment="1" language="C" svn="1" svn_directory="/home/sihab/PRG/BV21/svn/beevee/.svn" header_path="version.h" />
+				<Changes_Log show_changes_editor="1" app_title="released version %M.%m.%b of %p" changeslog_path="ChangesLog.txt" />
+			</AutoVersioning>
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

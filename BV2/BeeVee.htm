@@ -1,0 +1,341 @@
+<html>
+<head>
+<title>
+BeeVee : Board Viewer like ECAD Layout Reader Application --ReadMe--
+</title>
+</head>
+<body>
+<font face="Courier New,Verdana">
+<p>
+<font size="+3"><b>BeeVee 2.1.2</b></font><br>
+Blog: <a href="http://beevee-app.blogspot.com">http://beevee-app.blogspot.com</a><br>
+Oleh / <i>Writen by</i>:<br>
+<ul>
+<li>Sihabul Milah - eshabe[at]gmail.com, <a href="http://eshabe.wordpress.com">http://eshabe.wordpress.com</a></li>
+</ul>
+</p>
+<hr size="1">
+<blockquote>
+<p>Program ini adalah perangkat lunak bebas. Anda dapat mendistribusiulangkannya dan/atau mengubahnya di bawah ketentuan-ketentuan dari GNU General Public License<br>
+yang telah diterbitkan oleh Free Software Foundation; baik versi 2 dari License tersebut, atau versi yang lebih baru.</p>
+<p>Program ini didistribusikan dg. harapan dapat berguna, namun TANPA ADA JAMINAN. Lihat GNU General Public License agar lebih jelas.</p>
+<p>
+Anda seharusnya menerima salinan GNU General Public License bersama program ini; jika tidak, tulis surat ke Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA</p>
+<i>
+<p>
+This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or
+any later version.</p>
+<p>This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.</p>
+<p>You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA</p>
+  </blockquote>
+</i>
+<br>
+<hr size="1">
+<a name="id"></a>BAHASA INDONESIA - <a href="#en">ENGLISH</a>
+<hr size="1">
+
+<p> 
+Selamat datang di <b>BeeVee : Board Viewer like ECAD Layout Reader Application --ReadMe--</b>!<br>
+Terima kasih telah menggunakan program kami, semoga usaha kami membantu Anda tidak sia-sia
+belaka.
+</p>
+
+<p> 
+BeeVee adalah program untuk menampilkan layout <i>board</i> (PCBA) dan mencari
+lokasi komponen, testpin dan jalur dari berbagai sumber data.
+</p>
+
+<p> 
+Dokumen ini bukanlah panduan untuk menggunakan program tersebut. Panduan
+penggunaan berada pada dokumen terpisah.&nbsp;
+</p>
+
+<br>
+<p>
+<b>ISI</b><hr size="1">
+<ul>
+<li><a href="#id_1">Instalasi</a></li>
+<li><a href="#id_3">Kemampuan</a></li>
+<li><a href="#id_4">Masalah-masalah</a></li>
+<li><a href="#id_5">Dokumentasi</a></li>
+</ul>
+
+<br>
+<p><a name="id_1"></a>
+<b>Instalasi</b><hr size="1">
+  <ol>
+    <li>Salin berkas <b>BeeVee.exe</b> di map sesukamu.</li>
+    <li>Salin berkas <b>BeeVee.htm</b> di lokasi yang sama.</li>
+    <li>Salin berkas <b> BeeVee.exe.Manifest</b> di lokasi yang sama juga (tambahan
+bagi pengguna Windows XP).</li>
+  </ol>
+<br>
+
+<p><a name="id_3"></a>
+<b>Kemampuan</b><hr size="1">
+<ul>
+  <li>Umum:<br>
+<font size="-1">- Menampilkan dan mencari lokasi komponen, jalur (<i>trace</i>), testpin (probe/nail/node).<br>
+- Mencari testpin dan jalur dari suatu sinyal atau node.<br>
+- Mencari nama sinyal dari suatu pin.<br>
+- Mencari komponen-komponen yang berhubungan dengan suatu komponen. <br>
+- Melakukan proses pencerminan (flip) dan pemutaran (rotate).<br>
+- Melakukan penggabungan data. <br>
+- Ekpor ke berkas placement.<br>
+- Menyunting komponen.<br>
+- Membandingkan (layout) dua data.<br>
+- Fleksibel dalam Zoom dan pewarnaan.<br></font>
+</li>
+  <li>Mengenali data-2 berikut:<br>
+<font size="-1">
+- BeeVee 1.x (.bev)<br>
+- GenRad (.ckt, .tac) + ToolKit (.brd)<br>
+- Agilent ICT 3070 (board, board_xy, fixture)<br>
+- Agilent SJ50 (.plx, .pls)<br>
+- My General XY (TEXT dg format: REFDES{spasi}T|B{spasi}X1{spasi}Y1{spasi}X2{spasi}Y2 -- X2 & Y2 opsional)<br>
+- Placement data (TEXT dg data minimal REFDES,X,Y,ORIENTASI,TOP/BOT)<br>
+- GenCAD (cad)<br>
+- Fabmaster (fab)<br>
+- Unicam (pcb)<br>
+- Pad-PowerPCB (asc)<br>
+</font>
+</li>
+<li>BeeVee mengunakan satuan mils (0.001 inch) dan menganggap bahwa:<br>
+<font size="-1">
+- My Generel XY sudah dalam satuan mils<br>
+- Agilent ICT 3070 dalam 10 mils<br>
+- Agilent AOI SJ50 dalam satuan micron<br>
+- GenRad + Toolkit dalam satuan mils<br>
+- GenCAD dalam satuan mils<br>
+- Fabmaster dalam satuan mils<br>
+- Unicam dalam satuan mils<br>
+</font>
+
+  </li>
+</ul>
+
+<p><a name="id_4"></a>
+<b>Masalah-masalah</b><hr size="1">
+<ul>
+  <li> Karena menggunakan std ANSI (yg tidak Thread Safe) dalam mengolah berkas maka program seakan-2 berhenti saat pengolahan
+    berkas.</li>
+  <li>Tidak bisa jalan di Win98. (Setidaknya sampai versi 2.0.5, versi 2.1 belum
+    dicobakan).</li>
+  <li>Tidak mengenali orentasi komponen <b> selain</b> 0,90,180,270</li>
+  <li>Peralihan data BeeVee 2.0 (atau yg lebih lama) ke BeeVee 2.1; yakni data yang bersumber dari mesin tester yang mengikutsertakan nail/node/probe; (mungkin) akan salah dalam penempatan probe-probe yang memiliki nama signal sama. Sebetulnya, dalam BeeVee 2.0 Anda juga tidak dapat membedakan posisi probe-probe
+    tersebut. :)</li>
+  <li> <u>Masalah-2 lain yg belum terdeteksi silahkan beri tahu penulis</u> <br>
+
+
+  </li>
+</ul>
+
+
+<p><a name="id_5"></a>
+<b>Dokumentasi</b><hr size="1">
+<ul>
+  <li> 18 Mei 2010, 2.1.2 (r2.20100518.1)<br>
+    <font size="2">- Memastikan, hanya pin komponen sebagai ALTERNATE dalam board_xy<br>
+    - Tambah kotak Credits.<br>
+    </font>
+  </li>
+  <li> 5 Januari 2009, 2.1.1 (r1.20090105.1)<br>
+    <font size="2">- Tambah pesan "tidak ada" pd FindBar<br>
+    - Tambah beep dlm pencarian.<br>
+    - Tambah kemampuan membaca berkas bom/attribute (.atr)<br>
+    - Tambah ikon "1:1" pd toolbar.<br>
+    - Tambah perbandingan "placement".<br>
+    - Pewarnaan "via".<br>
+    - Perbaiki klik komponen yg bertumpuk.<br>
+    - Perubahan-perubahan ada di ChangesLog0.txt.<br>
+    - README.TXT<br>
+    </font>
+  </li>
+  <li> 6 September 2007, 2.1.0.3 (r03.20070906.0)<br>
+    <font size="2">- Perbaiki urutan tutup-buka berkas.<br>
+    - Perbaiki penggambaran jendela saat awal.<br>
+    - Perbaiki penggambaran kotak OpenRecent saat berubah.<br>
+    </font>
+  </li>
+  <li> 3 September 2007, 2.1.0.2 (r0.20070903.0)<br>
+    <font size="2">- Perbaiki urutan tutup-buka berkas fungsi Open Recent<br>
+    - Perbaiki fungsi drag (zoom)<br>
+    - Tambah toleransi saat klik obyek<br>
+    - Connection Guide berlaku juga pada testpin<br>
+    </font>
+  </li>
+  <li> 31 Agustus 2007, 2.1.0.1 (r0.20070831.0)<br>
+    <font size="2">
+    - Perbaiki masalah pencarian nail/node, jika tidak menyertakan F/N<br>
+    </font>
+  </li>
+  <li> 30 Agustus 2007, 2.1.0 (r0.20070830.0)<br>
+    <font size="2">
+- Lisensi GPL versi 2.<br>
+- Penambahan impor Pad-PowerPCB.<br>
+- Penambahan menu item di View; untuk <i> trace</i> dan <i> connection guide</i>.<br>
+- Penambahan menu item di Tools; untuk mencari probe yg memiliki nama
+signal yang sama.<br>
+- Penambahan fitur-fitur pembesaran dan perpindahan; gunakan tombol dan roda
+mouse.<br>
+- Perbaikan masalah tampilan saat mengubah ukuran jendela.<br>
+- Perbaikan masalah penanganan probe yang banyak.<br>
+- Perubahan data berkas: pindah data informasi dari signal ke testpin.<br>
+- Nama/nomor testpin dari data GenCAD disertakan ke dalam data.<br>
+    </font>
+  </li>
+  <li> 05 Juli 2007, 2.0.5 (r5.20070704.0)<br>
+    <font size="2">
+- Penambahan File &gt; New Window.<br>
+- Penambahan File &gt; Compare &gt; Layout / Information.<br>
+- Penambahan Find Connection.<br>
+- Penambahan opsi dlm <i> open recent</i>: New Window.<br>
+- Penambahan opsi dlm <i> export placement</i>: Top/Bottom/Both, Refdes only.<br>
+- Penambahan <i> keyboard accelerator</i>: Zoom.<br>
+- Penyempurnaan aksi &quot;Connections&quot; dalam Connection Box<br>
+- Perbaiki masalah penamaan board yg. mengakibatkan masalah dalam penyimpanan
+berkas.<br>
+    </font>
+  </li>
+  <li>22 Pebruari 2007, 2.0.4 (r4.20070222.0)<br>
+    <font size="2">
+- Penambahan Edit komponen. (Tools - Edit..)<br>
+- Penambahan opsi, spasi sebagai akhiran dlm findbar<br>
+- Penambahan opsi, teks di toolbar. Perubahan terjadi pd window baru.<br>
+- <i> Keyboard accelerator</i> bisa berfungsi walaupun jendela utama tidak aktip.<br>
+- Penyempurnaan command-line<br>
+    </font>
+  </li>
+  <li>11 Januari 2007, 2.0.3 (r3.20070111.0)<br>
+<font size="-1">
+- Penambahan merge Devices<br>
+- Tidak harus berkas bersumber GenCAD yg bisa di-merge, asal ada data yg dibutuhkan.<br>
+- Penambahan File &gt; Export Placement<br>
+- Standarisasi info komponen: XY=placement, PN=PartNumber, SHA=Shape, VAL=value, TOL=tolerance<br>
+- Tambah impor Unicam PCB, Fabmaster FAB<br>
+</font>
+
+  </li>
+  <li>7 Oktober 2006, 2.0.2 (r2.20061007.1)<br>
+<font size="-1">
+- Trace top,bottom,inner dibedakan warnanya -- berlaku hanya pada berkas yg
+diimpor dg s/w terbaru.<br>
+- Tambah &quot;Lock-add the trace&quot;: mengunci trace tanpa menghapus yg sudah ada.<br>
+- Tambah &quot;Merge...&quot;; penggabungan file: GenCAD trace (dan turunannya dlm bv2) ke data terbuka (test: ke turunan GenRAD data)<br>
+- Tambah menu item di View (F6,F7,F8)<br>
+- Tutup Find Box begitu &quot;Find&quot; selesai.<br>
+</font>
+
+  </li>
+  <li>22 September 2006, release 2.0 revisi 1 -- terima kasih atas masukannya!<br>
+<font size="-1">
+- Find Bar tetap fokus di text edit.<br>
+- Ketik &quot;@!&quot; untuk tutup Find Bar.<br>
+- Buang pembacaan Temp nail pada GenRAD tac, dan bv2 dari tac.<br>
+</font>
+  </li>
+  <li>16 September 2006, release 2.0!<br>
+  </li>
+  <li>Agustus 2006, versi 2.0 beta(#n).<br>
+  </li>
+</ul>
+
+<hr size="1">
+<a name="en"></a><a href="#id">BAHASA INDONESIA</a> - ENGLISH
+<hr size="1">
+
+<p> 
+Welcome at <b>BeeVee : Board Viewer like ECAD Layout Reader Application
+--ReadMe--</b>!<br>
+Thank you for using this software and hope it help you.<br>
+</p>
+
+<p>BeeVee is a program to display layout of a board (PCBA) and locate the
+components/devices, testpins and traces from any sources.</p>
+<p>This document is NOT an usage guide. The guide should be in another document.</p>
+<p>
+<b>CONTENTS</b><hr size="1">
+<ul>
+  <li> <a href="#en_1">Installation</a></li>
+  <li><a href="#en_3">Abilities</a></li>
+  <li><a href="#en_4">Known Problems</a></li>
+  <li><a href="#id_5">Documentation</a><br>
+
+    <br>
+  </li>
+</ul>
+
+<p><a name="en_1"></a>
+<b>Instalasi</b><hr size="1">
+<ol>
+  <li> Copy <b>BeeVee.exe</b> file into a folder.</li>
+  <li>Copy  <b>BeeVee.htm</b> file into a same folder.</li>
+  <li>Copy  <b> BeeVee.exe.Manifest</b> file into a same folder (additional for Windows XP users).</li>
+</ol>
+<p>&nbsp;</p>
+
+<p><a name="en_3"></a>
+<b>Abilities</b><hr size="1">
+<ul>
+  <li> General:<br>
+<font size="-1">- Displays and locates devices, traces and testpins (probe/nail/node).<br>
+- Locates testpins and traces of a signal or node.<br>
+- Gets signal name of a pin.<br>
+- Locates connected devices of a device.<br>
+- Perform flip and rotate.<br>
+- Merges data. <br>
+- Export to placement file.<br>
+- Edit a device.<br>
+- Compare layout between two files.<br>
+- Flexibility in zooming and coloring.<br></font>
+  </li>
+  <li>Applicable for data:<br>
+<font size="-1">
+- BeeVee 1.x (.bev)<br>
+- GenRad (.ckt, .tac) + ToolKit (.brd)<br>
+- Agilent ICT 3070 (board, board_xy, fixture)<br>
+- Agilent SJ50 (.plx, .pls)<br>
+- My General XY (TEXT with format: REFDES{spasi}T|B{spasi}X1{spasi}Y1{spasi}X2{spasi}Y2 -- X2 & Y2 opsional)<br>
+- Placement data (TEXT with minimum data contains REFDES,X,Y,ORIENTASI,TOP/BOT)<br>
+- GenCAD (cad)<br>
+- Fabmaster (fab)<br>
+- Unicam (pcb)<br>
+- Pad-PowerPCB (asc)<br>
+</font>
+  </li>
+  <li>BeeVee use mils (0.001 inches) unit and assumes:<br>
+<font size="-1">
+- My General XY in mils<br>
+- Agilent ICT 3070 in 10 mils<br>
+- Agilent AOI SJ50 in micron<br>
+- GenRad + Toolkit in mils<br>
+- GenCAD in mils<br>
+- Fabmaster in mils<br>
+- Unicam in mils<br>
+</font>
+
+  </li>
+</ul>
+<p>&nbsp;</p>
+
+<p><a name="id_4"></a>
+<b>Known Problems</b><hr size="1">
+<ul>
+  <li> This program is based on ANSI C language (not thread safe); it is normal when loadig a file seemly stop.</li>
+  <li>Cannot work in Windows 98. (Confirmed for version 2.0.5, version 2.1 is not tested yet).</li>
+  <li>Does not know any orientations <b>except</b> 0,90,180,270</li>
+  <li>Transfer from BeeVee 2.0 (or before) data to BeeVee 2.1; data from tester machine contains nail/node/probe; (maybe) will get wrong placement of the single signal multi probes.
+    Actually, you can not see where is a probe of the probes of a signal in BeeVee 2.0 :)</li>
+  <li> <u>Other problems, please feedback to the author!</u> <br>
+
+  </li>
+</ul>
+<p>&nbsp;</p>
+
+<p>
+<b>Terima Kasih Kepada | Thanks To</b><hr size="1">
+- Nanang, Jumali -- BeeVee 1.x<br>
+- Cholis, Didik, Sofyan, Nadhor, Andik -- BeeVee 2.x<br>
+- Burhan, Fathur, Dhani.
+</font>
+</body>

@@ -1,0 +1,34 @@
+12 June 2010
+   released version 2.1.2.1b1 of BV2
+
+     Change log:
+        -Fixed: Problem read long device information. Applied to node, testpin
+
+18 May 2010
+   released version 2.1.2 of BV2
+
+     Change log:
+        -Applied: Ensure component's pin as ALTERNATE in board_xy file
+
+05 Januari 2009
+   released version 2.1.1 of BV2
+
+     Change log:
+        -Applied: not found message in findbar mode
+        -Applied: MessageBeep in finding
+        -New: import bom/attribute file ability
+        -New: via coloring
+        -Fixed: click double-components bug
+        -New: 1:1 icon in toolbar
+        -Applied: clear selection by right-click
+        -New: move board origin lower left to 0,0
+        -New: move board origin by external refrence
+        -New: offset board menu/function
+        -New: option update
+        -Added: compare placement menu/function
+        -Applied: manip XY in info
+        -Fixed: flip trace (objecttrace_cermin) of ARC object
+        -Added: XY in info of data from plx/pls file
+        -Fixed: mygeneral file reading bug when 'tb' is more than 7 chars
+        -Applied: Versioning
+

@@ -1,0 +1,2893 @@
+# depslib dependency file v1.0
+1155283531 c:\prg\bv2\bv2.cpp
+	<windows.h>
+	"resource.h"
+	<commdlg.h>
+	<commctrl.h>
+	"toolbox.h"
+	"beeveefile.h"
+	"ag3070file.h"
+	"agsj50file.h"
+	"genrad228xfile.h"
+	"generalxy.h"
+	"gencadfile.h"
+	"BV2.h"
+	"bv2draw.h"
+	"bv2toolbar.h"
+	"bv2object.h"
+	"bv2find.h"
+	"statusbar.h"
+	"bv2import.h"
+	"bv2option.h"
+	"bv2connect.h"
+
+1193291668 t.h"
+
+1183109369 c:\prg\bv2\resource.h
+
+1157000756 c:\prg\bv2\toolbox.h
+	<windows.h>
+
+1191052647 >
+
+1168489639 c:\prg\bv2\beeveefile.h
+	"sboard.h"
+
+1143086580 
+
+1172045077 c:\prg\bv2\sboard.h
+	<stdio.h>
+	"..\sdata_c\sdata.h"
+	"..\steks_c\stext.h"
+
+1192525097 c\stext.h"
+
+1155706620 c:\prg\bv2\sdata.h
+
+1147246320 c:\prg\bv2\stext.h
+
+1155283380 c:\prg\bv2\ag3070file.h
+	"sboard.h"
+
+1155283380 c:\prg\bv2\agsj50file.h
+	"sboard.h"
+
+1155706620 c:\prg\bv2\genrad228xfile.h
+	"sboard.h"
+
+1155706620 c:\prg\bv2\generalxy.h
+	"sboard.h"
+
+1155706620 c:\prg\bv2\gencadfile.h
+	"sboard.h"
+
+1183518694 c:\prg\bv2\bv2.h
+	<windows.h>
+	"resource.h"
+	"sboard.h"
+
+1172030855 c:\prg\bv2\bv2draw.h
+	<windows.h>
+	"..\sdata_c\sdata.h"
+	"sboard.h"
+
+1156919869 c:\prg\bv2\bv2toolbar.h
+	<windows.h>
+
+1170045766 c:\prg\bv2\bv2object.h
+	<windows.h>
+
+1183109240 c:\prg\bv2\bv2find.h
+	<windows.h>
+
+1171869833 c:\prg\bv2\statusbar.h
+	<windows.h>
+
+1183033623 c:\prg\bv2\bv2import.h
+	<windows.h>
+
+1172047192 c:\prg\bv2\bv2option.h
+	<windows.h>
+
+1155900240 c:\prg\bv2\bv2connect.h
+	<windows.h>
+
+1183608923 c:\prg\bv2\bv2.rc
+	"windows.h"
+	"resource.h"
+	"bv2.h"
+
+1192519970 h"
+
+1168502118 c:\prg\bv2\ag3070file.c
+	"ag3070file.h"
+	<stdio.h>
+	<string.h>
+	"..\steks_c\stext.h"
+
+1168499871 c:\prg\bv2\agsj50file.c
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+	"agsj50file.h"
+	"..\sdata_c\sdatateks.h"
+
+1192535853 c\sdatateks.h"
+
+1155706620 c:\prg\bv2\sdatateks.h
+	"sdata.h"
+
+1168499877 c:\prg\bv2\beeveefile.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"beeveefile.h"
+	"..\sdata_c\sdatateks.h"
+
+1170041889 c:\prg\bv2\bv2connect.c
+	"bv2winmain.h"
+	"bv2.h"
+	"bv2draw.h"
+	"toolbox.h"
+	"bv2connect.h"
+
+1170041929 c:\prg\bv2\bv2winmain.h
+	<windows.h>
+	<commdlg.h>
+	<commctrl.h>
+	<windowsx.h>
+	"resource.h"
+	<stdlib.h>
+	<string.h>
+	"..\sdata_c\sdata.h"
+	"..\sdata_c\sdatateks.h"
+	"sboard.h"
+
+1155284686 c:\prg\bv2\bv2draw.cpp
+	"resource.h"
+	<math.h>
+	<stdlib.h>
+	"sboard.h"
+	"BV2.h"
+	"bv2toolbar.h"
+	"bv2draw.h"
+	"bv2object.h"
+	"statusbar.h"
+	"sdatateks.h"
+	"bv2find.h"
+	"bv2option.h"
+
+1188362434 .h"
+
+1183109204 c:\prg\bv2\bv2find.c
+	"bv2find.h"
+	"bv2.h"
+	"bv2draw.h"
+	"toolbox.h"
+	"statusbar.h"
+	"bv2object.h"
+	"..\sdata_c\sdatateks.h"
+
+1153293132 c:\prg\bv2\bv2object.cpp
+	"bv2object.h"
+	"statusbar.h"
+	"bv2draw.h"
+	"bv2find.h"
+	"resource.h"
+
+1183033617 c:\prg\bv2\bv2import.c
+	"bv2import.h"
+	"resource.h"
+	"toolbox.h"
+
+1189484270 "
+
+1172047174 c:\prg\bv2\bv2option.c
+	"bv2option.h"
+	"resource.h"
+	"sboard.h"
+
+1155285123 c:\prg\bv2\bv2properties.cpp
+	"resource.h"
+	"sboard.h"
+	"bv2.h"
+
+1155285592 c:\prg\bv2\bv2toolbar.cpp
+	"bv2toolbar.h"
+	"resource.h"
+	<commctrl.h>
+
+1191045409 h>
+
+1168503168 c:\prg\bv2\generalxy.c
+	<stdio.h>
+	<stdlib.h>
+	"generalxy.h"
+	"..\sdata_c\sdatateks.h"
+
+1182753522 c:\prg\bv2\sboard.c
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+	"sboard.h"
+
+1156336920 c:\prg\bv2\sdata.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"sdata.h"
+
+1158917755 c:\prg\bv2\sdatateks.c
+	<string.h>
+	<stdlib.h>
+	"sdatateks.h"
+	"stext.h"
+
+1143086580 c:\prg\bv2\slog.c
+	<stdio.h>
+	<time.h>
+	<string.h>
+	"slog.h"
+
+1144303440 c:\prg\bv2\slog.h
+
+1168514030 c:\prg\bv2\gencadfile.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<math.h>
+	"gencadfile.h"
+	"..\sdata_c\sdatateks.h"
+
+1168503173 c:\prg\bv2\genrad228xfile.c
+	<stdio.h>
+	<string.h>
+	"genrad228xfile.h"
+	"..\sdata_c\sdatateks.h"
+
+1171870089 c:\prg\bv2\statusbar.c
+	<windows.h>
+	<commctrl.h>
+	"statusbar.h"
+	"resource.h"
+
+1155706620 c:\prg\bv2\stext.c
+	<string.h>
+	<stdlib.h>
+
+1157001476 c:\prg\bv2\toolbox.c
+	<windows.h>
+
+1183110041 c:\prg\bv2\bv2.c
+	<windows.h>
+	"resource.h"
+	<commdlg.h>
+	<commctrl.h>
+	"toolbox.h"
+	"beeveefile.h"
+	"ag3070file.h"
+	"agsj50file.h"
+	"genrad228xfile.h"
+	"generalxy.h"
+	"gencadfile.h"
+	"fabfile.h"
+	"unicampcb.h"
+	"BV2.h"
+	"bv2draw.h"
+	"bv2toolbar.h"
+	"bv2object.h"
+	"bv2find.h"
+	"statusbar.h"
+	"bv2import.h"
+	"bv2option.h"
+	"bv2connect.h"
+	"bv2recents.h"
+	"bv2placement.h"
+	"bv2mergedlg.h"
+	"bv2explacement.h"
+	"bv2export.h"
+	"bv2loadex.h"
+	"bv2cmpdevs.h"
+
+1183460814 s.h"
+
+1158922930 c:\prg\bv2\bv2properties.c
+	"resource.h"
+	"sboard.h"
+	"bv2.h"
+
+1172030991 c:\prg\bv2\bv2draw.c
+	"bv2winmain.h"
+	"BV2.h"
+	"bv2toolbar.h"
+	"bv2draw.h"
+	"bv2object.h"
+	"statusbar.h"
+	"bv2find.h"
+	"bv2option.h"
+	"bv2connect.h"
+
+1172029804 c:\prg\bv2\bv2object.c
+	"bv2.h"
+	"bv2object.h"
+	"statusbar.h"
+	"bv2draw.h"
+	"bv2find.h"
+	"resource.h"
+
+1172047276 c:\prg\bv2\bv2toolbar.c
+	"bv2toolbar.h"
+	"resource.h"
+	<commctrl.h>
+
+1182755664 c:\prg\bv2\bv2recents.c
+	"bv2recents.h"
+	"..\sdata_c\sdata.h"
+	"toolbox.h"
+	"resource.h"
+
+1182755675 c:\prg\bv2\bv2recents.h
+	<windows.h>
+
+1168503031 c:\prg\bv2\bv2placement.c
+	"resource.h"
+	"bv2placement.h"
+	"..\steks_c\stext.h"
+
+1156492608 c:\prg\bv2\bv2placement.h
+	<windows.h>
+	"placefile.h"
+
+1156478109 c:\prg\bv2\bv2unit.c
+	<windows.h>
+	"resource.h"
+
+1156558566 c:\prg\bv2\placefile.h
+	"sboard.h"
+
+1168503178 c:\prg\bv2\placefile.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"placefile.h"
+	"..\sdata_c\sdatateks.h"
+	"unitconv.h"
+
+1168512552 c:\prg\bv2\unitconv.c
+
+1168512552 c:\prg\bv2\unitconv.h
+	"sboard.h"
+
+1183016376 c:\prg\bv2\bv2merge.c
+	"sboard.h"
+
+1168503190 c:\prg\bv2\signalndlg.c
+	<windows.h>
+	"resource.h"
+	"..\steks_c\stext.h"
+
+1165487750 c:\prg\bv2\bv2mergedlg.c
+	"bv2import.h"
+	"resource.h"
+	"toolbox.h"
+	"bv2mergedlg.h"
+
+1187939186 lg.h"
+
+1165487680 c:\prg\bv2\bv2mergedlg.h
+	<windows.h>
+
+1183109305 c:\prg\bv2\bv2findex.c
+	<windows.h>
+
+1168503156 c:\prg\bv2\fabfile.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<math.h>
+	"sboard.h"
+	"..\sdata_c\sdatateks.h"
+
+1168503196 c:\prg\bv2\unicampcb.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<math.h>
+	"sboard.h"
+	"..\sdata_c\sdatateks.h"
+
+1165911320 c:\prg\bv2\fabfile.h
+	"sboard.h"
+
+1165911309 c:\prg\bv2\unicampcb.h
+	"sboard.h"
+
+1183031897 c:\prg\bv2\bv2explacement.c
+	"BV2.h"
+	"resource.h"
+	"bv2explacement.h"
+
+1187939186 ement.h"
+
+1183032216 c:\prg\bv2\bv2explacement.h
+	<windows.h>
+
+1168504863 c:\prg\bv2\bv2export.h
+	"sboard.h"
+
+1167207585 c:\prg\sdata_c\sdata.h
+
+1168500356 c:\prg\sdata_c\sdatateks.h
+	"sdata.h"
+
+1168501979 c:\prg\steks_c\stext.h
+
+1183032296 c:\prg\bv2\bv2export.c
+	"bv2.h"
+	"bv2explacement.h"
+	"bv2export.h"
+	"unitconv.h"
+
+1167207610 c:\prg\sdata_c\sdata.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"sdata.h"
+
+1168503206 c:\prg\sdata_c\sdatateks.c
+	<string.h>
+	<stdlib.h>
+	"sdatateks.h"
+	"..\steks_c\stext.h"
+
+1155706620 c:\prg\steks_c\stext.c
+	<string.h>
+	<stdlib.h>
+
+1171944911 c:\prg\bv2\bv2loadex.c
+	<windows.h>
+	"resource.h"
+
+1171872245 c:\prg\bv2\bv2loadex.h
+	<windows.h>
+
+1172118291 c:\prg\bv2\bv2editdev.c
+	<windows.h>
+	<windowsx.h>
+	"resource.h"
+	"bv2.h"
+	"bv2draw.h"
+	"sboard.h"
+
+1183019228 c:\prg\bv2\bv2cmpdevs.h
+	"sboard.h"
+
+1183460813 c:\prg\bv2\bv2cmpdevs.c
+	"bv2cmpdevs.h"
+
+1188354075 c:\prg\bv21\bv2\bv2.c
+	<windows.h>
+	"resource.h"
+	<commdlg.h>
+	<commctrl.h>
+	"toolbox.h"
+	"beeveefile.h"
+	"ag3070file.h"
+	"agsj50file.h"
+	"genrad228xfile.h"
+	"generalxy.h"
+	"gencadfile.h"
+	"fabfile.h"
+	"unicampcb.h"
+	"ppcbfile.h"
+	"export.h"
+	"cmpdevs.h"
+	"BV2.h"
+	"bv2draw.h"
+	"bv2toolbar.h"
+	"bv2object.h"
+	"bv2find.h"
+	"statusbar.h"
+	"bv2import.h"
+	"bv2option.h"
+	"bv2connect.h"
+	"bv2recents.h"
+	"bv2placement.h"
+	"bv2mergedlg.h"
+	"bv2explacement.h"
+	"bv2loadex.h"
+
+1188204612 c:\prg\bv21\bv2\resource.h
+
+1187939581 c:\prg\bv21\bv2\toolbox.h
+	<windows.h>
+
+1188354242 c:\prg\bv21\bv2\bv2.h
+	<windows.h>
+	"resource.h"
+	"../bv2data/sboard.h"
+
+1191047453 a/sboard.h"
+
+1188204848 c:\prg\bv21\bv2\bv2draw.h
+	<windows.h>
+	"..\sdata_c\sdata.h"
+	"sboard.h"
+
+1187939970 c:\prg\bv21\sdata_c\sdata.h
+
+1187939587 c:\prg\bv21\bv2\bv2toolbar.h
+	<windows.h>
+
+1187939587 c:\prg\bv21\bv2\bv2object.h
+	<windows.h>
+
+1187939587 c:\prg\bv21\bv2\bv2find.h
+	<windows.h>
+
+1188205458 c:\prg\bv21\bv2\statusbar.h
+	<windows.h>
+
+1187939587 c:\prg\bv21\bv2\bv2import.h
+	<windows.h>
+
+1187939587 c:\prg\bv21\bv2\bv2option.h
+	<windows.h>
+
+1187939508 c:\prg\bv21\bv2\bv2connect.h
+	<windows.h>
+
+1187939587 c:\prg\bv21\bv2\bv2recents.h
+	<windows.h>
+
+1187939587 c:\prg\bv21\bv2\bv2placement.h
+	<windows.h>
+	"placefile.h"
+
+1187939587 c:\prg\bv21\bv2\bv2mergedlg.h
+	<windows.h>
+
+1187939587 c:\prg\bv21\bv2\bv2explacement.h
+	<windows.h>
+	"export.h"
+
+1168504864 c:\prg\bv21\bv2\bv2export.h
+	"sboard.h"
+
+1187939587 c:\prg\bv21\bv2\bv2loadex.h
+	<windows.h>
+
+1183019230 c:\prg\bv21\bv2\bv2cmpdevs.h
+	"sboard.h"
+
+1188204629 c:\prg\bv21\bv2\bv2.rc
+	"windows.h"
+	"resource.h"
+	"bv2.h"
+
+1183460814 c:\prg\bv21\bv2\bv2cmpdevs.c
+	"bv2cmpdevs.h"
+
+1187939185 c:\prg\bv21\bv2\bv2connect.c
+	"bv2winmain.h"
+	"bv2.h"
+	"bv2draw.h"
+	"toolbox.h"
+	"bv2connect.h"
+
+1187939587 c:\prg\bv21\bv2\bv2winmain.h
+	<windows.h>
+	<commdlg.h>
+	<commctrl.h>
+	<windowsx.h>
+	"resource.h"
+	<stdlib.h>
+	<string.h>
+	"..\sdata_c\sdata.h"
+	"..\sdata_c\sdatateks.h"
+	"sboard.h"
+
+1187939984 c:\prg\bv21\sdata_c\sdatateks.h
+	"sdata.h"
+
+1188353385 c:\prg\bv21\bv2\bv2draw.c
+	"bv2winmain.h"
+	"BV2.h"
+	"bv2toolbar.h"
+	"bv2draw.h"
+	"bv2object.h"
+	"statusbar.h"
+	"bv2find.h"
+	"bv2option.h"
+	"bv2connect.h"
+
+1187939185 c:\prg\bv21\bv2\bv2editdev.c
+	<windows.h>
+	<windowsx.h>
+	"resource.h"
+	"bv2.h"
+	"bv2draw.h"
+	"sboard.h"
+
+1187939185 c:\prg\bv21\bv2\bv2explacement.c
+	"BV2.h"
+	"resource.h"
+	"bv2explacement.h"
+
+1186458619 c:\prg\bv21\bv2\bv2export.c
+	"bv2.h"
+	"bv2explacement.h"
+	"bv2export.h"
+	"unitconv.h"
+
+1168512554 c:\prg\bv21\bv2\unitconv.h
+	"sboard.h"
+
+1187939185 c:\prg\bv21\bv2\bv2find.c
+	"bv2find.h"
+	"bv2.h"
+	"bv2draw.h"
+	"toolbox.h"
+	"statusbar.h"
+	"bv2object.h"
+	"..\sdata_c\sdatateks.h"
+
+1187939185 c:\prg\bv21\bv2\bv2findex.c
+	"BV2.h"
+
+1187939185 c:\prg\bv21\bv2\bv2import.c
+	"bv2import.h"
+	"resource.h"
+	"toolbox.h"
+
+1187939185 c:\prg\bv21\bv2\bv2loadex.c
+	<windows.h>
+	"resource.h"
+
+1187939185 c:\prg\bv21\bv2\bv2merge.c
+	"sboard.h"
+
+1187939185 c:\prg\bv21\bv2\bv2mergedlg.c
+	"bv2import.h"
+	"resource.h"
+	"toolbox.h"
+	"bv2mergedlg.h"
+
+1187939182 c:\prg\bv21\bv2\bv2object.c
+	"bv2.h"
+	"bv2object.h"
+	"statusbar.h"
+	"bv2draw.h"
+	"bv2find.h"
+	"resource.h"
+
+1187939194 c:\prg\bv21\bv2\bv2option.c
+	"bv2option.h"
+	"resource.h"
+	"sboard.h"
+
+1187939202 c:\prg\bv21\bv2\bv2placement.c
+	"resource.h"
+	"bv2placement.h"
+	"..\steks_c\stext.h"
+
+1187940011 c:\prg\bv21\steks_c\stext.h
+
+1187939209 c:\prg\bv21\bv2\bv2properties.c
+	"resource.h"
+	"sboard.h"
+	"bv2.h"
+
+1187939215 c:\prg\bv21\bv2\bv2recents.c
+	"bv2recents.h"
+	"..\sdata_c\sdata.h"
+	"toolbox.h"
+	"resource.h"
+
+1187939248 c:\prg\bv21\bv2\bv2toolbar.c
+	"bv2toolbar.h"
+	"resource.h"
+	<commctrl.h>
+
+1187939230 c:\prg\bv21\bv2\bv2unit.c
+	<windows.h>
+	"resource.h"
+
+1187939284 c:\prg\bv21\bv2\signalndlg.c
+	<windows.h>
+	"resource.h"
+	"..\steks_c\stext.h"
+
+1188205945 c:\prg\bv21\bv2\statusbar.c
+	<windows.h>
+	<commctrl.h>
+	"statusbar.h"
+	"resource.h"
+
+1187939299 c:\prg\bv21\bv2\toolbox.c
+	<windows.h>
+
+1168512554 c:\prg\bv21\bv2\unitconv.c
+
+1187939340 c:\prg\bv21\bv2data\ag3070file.c
+	"ag3070file.h"
+	<stdio.h>
+	<string.h>
+	"../steks_c/stext.h"
+	"../sdata_c/sdatateks.h"
+
+1192527123 c/sdatateks.h"
+
+1187939650 c:\prg\bv21\bv2data\ag3070file.h
+	"sboard.h"
+
+1187939705 c:\prg\bv21\bv2data\sboard.h
+	<stdio.h>
+	"../sdata_c/sdata.h"
+	"../steks_c/stext.h"
+
+1188361330 c/stext.h"
+
+1187939840 c:\prg\bv21\bv2data\agsj50file.c
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+	"agsj50file.h"
+	"sdatateks.h"
+
+1187939615 c:\prg\bv21\bv2data\agsj50file.h
+	"sboard.h"
+
+1187939840 c:\prg\bv21\bv2data\beeveefile.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"beeveefile.h"
+	"sdatateks.h"
+
+1187939622 c:\prg\bv21\bv2data\beeveefile.h
+	"sboard.h"
+
+1187939840 c:\prg\bv21\bv2data\fabfile.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<math.h>
+	"sboard.h"
+	"sdatateks.h"
+
+1187939840 c:\prg\bv21\bv2data\gencadfile.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<math.h>
+	"gencadfile.h"
+	"sdatateks.h"
+
+1187939667 c:\prg\bv21\bv2data\gencadfile.h
+	"sboard.h"
+
+1187939840 c:\prg\bv21\bv2data\generalxy.c
+	<stdio.h>
+	<stdlib.h>
+	"generalxy.h"
+	"sdatateks.h"
+
+1187939674 c:\prg\bv21\bv2data\generalxy.h
+	"sboard.h"
+
+1187939840 c:\prg\bv21\bv2data\genrad228xfile.c
+	<stdio.h>
+	<string.h>
+	"genrad228xfile.h"
+	"sdatateks.h"
+
+1187939680 c:\prg\bv21\bv2data\genrad228xfile.h
+	"sboard.h"
+
+1187939398 c:\prg\bv21\bv2data\placefile.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"placefile.h"
+	"sdatateks.h"
+	"unitconv.h"
+
+1187939686 c:\prg\bv21\bv2data\placefile.h
+	"sboard.h"
+
+1187939403 c:\prg\bv21\bv2data\ppcbfile.c
+	<stdio.h>
+	<string.h>
+	"sboard.h"
+	"sdatateks.h"
+	"unitconv.h"
+	"ppcbfile.h"
+
+1187939694 c:\prg\bv21\bv2data\ppcbfile.h
+	<Carbon/Carbon.h>
+	"sboard.h"
+
+1187939408 c:\prg\bv21\bv2data\sboard.c
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+	"sboard.h"
+
+1187939860 c:\prg\bv21\bv2data\unicampcb.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<math.h>
+	"sboard.h"
+	"sdatateks.h"
+
+1187939920 c:\prg\bv21\sdata_c\sdata.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"sdata.h"
+
+1187939939 c:\prg\bv21\sdata_c\sdatateks.c
+	<string.h>
+	<stdlib.h>
+	"sdatateks.h"
+	"stext.h"
+
+1187939954 c:\prg\bv21\steks_c\stext.c
+	<string.h>
+	<stdlib.h>
+
+1187939713 c:\prg\bv21\bv2data\unitconv.h
+	"sboard.h"
+
+1186393662 c:\prg\bv21\bv2data\unitconv.c
+
+1187939368 c:\prg\bv21\bv2data\cmpdevs.c
+	"cmpdevs.h"
+
+1187939629 c:\prg\bv21\bv2data\cmpdevs.h
+	"sboard.h"
+
+1187939438 c:\prg\bv21\bv2data\export.c
+	"bv2explacement.h"
+	"export.h"
+	"unitconv.h"
+
+1187939634 c:\prg\bv21\bv2data\export.h
+	"sboard.h"
+
+1187939276 c:\prg\bv21\bv2\licence.c
+	"BV2.h"
+
+1188362434 e:\prg\bv21\bv2\bv2.c
+	<windows.h>
+	"resource.h"
+	<commdlg.h>
+	<commctrl.h>
+	"../bv2data/beeveefile.h"
+	"../bv2data/ag3070file.h"
+	"../bv2data/agsj50file.h"
+	"../bv2data/genrad228xfile.h"
+	"../bv2data/generalxy.h"
+	"../bv2data/gencadfile.h"
+	"../bv2data/fabfile.h"
+	"../bv2data/unicampcb.h"
+	"../bv2data/ppcbfile.h"
+	"../bv2data/export.h"
+	"../bv2data/cmpdevs.h"
+	"BV2.h"
+	"toolbox.h"
+	"bv2draw.h"
+	"bv2toolbar.h"
+	"bv2object.h"
+	"bv2find.h"
+	"statusbar.h"
+	"bv2import.h"
+	"bv2option.h"
+	"bv2connect.h"
+	"bv2recents.h"
+	"bv2placement.h"
+	"bv2mergedlg.h"
+	"bv2explacement.h"
+	"bv2loadex.h"
+
+1188204614 e:\prg\bv21\bv2\resource.h
+
+1187939582 e:\prg\bv21\bv2\toolbox.h
+	<windows.h>
+
+1188354244 e:\prg\bv21\bv2\bv2.h
+	<windows.h>
+	"resource.h"
+	"../bv2data/sboard.h"
+
+1187939706 e:\prg\bv21\bv2data\sboard.h
+	<stdio.h>
+	"../sdata_c/sdata.h"
+	"../steks_c/stext.h"
+
+1187939972 e:\prg\bv21\sdata_c\sdata.h
+
+1187940012 e:\prg\bv21\steks_c\stext.h
+
+1188359138 e:\prg\bv21\bv2\bv2draw.h
+	<windows.h>
+	"../sdata_c/sdata.h"
+	"../bv2data/sboard.h"
+
+1187939588 e:\prg\bv21\bv2\bv2toolbar.h
+	<windows.h>
+
+1187939588 e:\prg\bv21\bv2\bv2object.h
+	<windows.h>
+
+1187939588 e:\prg\bv21\bv2\bv2find.h
+	<windows.h>
+
+1188205460 e:\prg\bv21\bv2\statusbar.h
+	<windows.h>
+
+1187939588 e:\prg\bv21\bv2\bv2import.h
+	<windows.h>
+
+1187939588 e:\prg\bv21\bv2\bv2option.h
+	<windows.h>
+
+1187939510 e:\prg\bv21\bv2\bv2connect.h
+	<windows.h>
+
+1187939588 e:\prg\bv21\bv2\bv2recents.h
+	<windows.h>
+
+1188359155 e:\prg\bv21\bv2\bv2placement.h
+	<windows.h>
+	"../bv2data/placefile.h"
+
+1188359155 a/placefile.h"
+
+1187939588 e:\prg\bv21\bv2\bv2mergedlg.h
+	<windows.h>
+
+1188359177 e:\prg\bv21\bv2\bv2explacement.h
+	<windows.h>
+	"../bv2data/export.h"
+
+1188359177 a/export.h"
+
+1187939588 e:\prg\bv21\bv2\bv2loadex.h
+	<windows.h>
+
+1188354638 e:\prg\bv21\bv2\bv2.rc
+	"windows.h"
+	"resource.h"
+	"bv2.h"
+
+1187939186 e:\prg\bv21\bv2\bv2connect.c
+	"bv2winmain.h"
+	"bv2.h"
+	"bv2draw.h"
+	"toolbox.h"
+	"bv2connect.h"
+
+1188359209 e:\prg\bv21\bv2\bv2winmain.h
+	<windows.h>
+	<commdlg.h>
+	<commctrl.h>
+	<windowsx.h>
+	"resource.h"
+	<stdlib.h>
+	<string.h>
+	"../sdata_c/sdata.h"
+	"../sdata_c/sdatateks.h"
+	"../bv2data/sboard.h"
+
+1187939986 e:\prg\bv21\sdata_c\sdatateks.h
+	"sdata.h"
+
+1188362730 e:\prg\bv21\bv2\bv2draw.c
+	"bv2winmain.h"
+	"BV2.h"
+	"bv2toolbar.h"
+	"bv2draw.h"
+	"bv2object.h"
+	"statusbar.h"
+	"bv2find.h"
+	"bv2option.h"
+	"bv2connect.h"
+
+1188359221 e:\prg\bv21\bv2\bv2editdev.c
+	<windows.h>
+	<windowsx.h>
+	"resource.h"
+	"bv2.h"
+	"bv2draw.h"
+	"../bv2data/sboard.h"
+
+1187939186 e:\prg\bv21\bv2\bv2explacement.c
+	"BV2.h"
+	"resource.h"
+	"bv2explacement.h"
+
+1187939186 e:\prg\bv21\bv2\bv2find.c
+	"bv2find.h"
+	"bv2.h"
+	"bv2draw.h"
+	"toolbox.h"
+	"statusbar.h"
+	"bv2object.h"
+	"..\sdata_c\sdatateks.h"
+
+1187939186 e:\prg\bv21\bv2\bv2findex.c
+	"BV2.h"
+
+1187939186 e:\prg\bv21\bv2\bv2import.c
+	"bv2import.h"
+	"resource.h"
+	"toolbox.h"
+
+1187939186 e:\prg\bv21\bv2\bv2loadex.c
+	<windows.h>
+	"resource.h"
+
+1188361161 e:\prg\bv21\bv2\bv2merge.c
+	"../bv2data/sboard.h"
+
+1187939186 e:\prg\bv21\bv2\bv2mergedlg.c
+	"bv2import.h"
+	"resource.h"
+	"toolbox.h"
+	"bv2mergedlg.h"
+
+1187939184 e:\prg\bv21\bv2\bv2object.c
+	"bv2.h"
+	"bv2object.h"
+	"statusbar.h"
+	"bv2draw.h"
+	"bv2find.h"
+	"resource.h"
+
+1188361170 e:\prg\bv21\bv2\bv2option.c
+	"bv2option.h"
+	"resource.h"
+	"../bv2data/sboard.h"
+
+1187939204 e:\prg\bv21\bv2\bv2placement.c
+	"resource.h"
+	"bv2placement.h"
+	"..\steks_c\stext.h"
+
+1188361179 e:\prg\bv21\bv2\bv2properties.c
+	"resource.h"
+	"../bv2data/sboard.h"
+	"bv2.h"
+
+1187939216 e:\prg\bv21\bv2\bv2recents.c
+	"bv2recents.h"
+	"..\sdata_c\sdata.h"
+	"toolbox.h"
+	"resource.h"
+
+1187939250 e:\prg\bv21\bv2\bv2toolbar.c
+	"bv2toolbar.h"
+	"resource.h"
+	<commctrl.h>
+
+1187939232 e:\prg\bv21\bv2\bv2unit.c
+	<windows.h>
+	"resource.h"
+
+1187939278 e:\prg\bv21\bv2\licence.c
+	"BV2.h"
+
+1187939286 e:\prg\bv21\bv2\signalndlg.c
+	<windows.h>
+	"resource.h"
+	"..\steks_c\stext.h"
+
+1188205946 e:\prg\bv21\bv2\statusbar.c
+	<windows.h>
+	<commctrl.h>
+	"statusbar.h"
+	"resource.h"
+
+1187939300 e:\prg\bv21\bv2\toolbox.c
+	<windows.h>
+
+1187939342 e:\prg\bv21\bv2data\ag3070file.c
+	"ag3070file.h"
+	<stdio.h>
+	<string.h>
+	"../steks_c/stext.h"
+	"../sdata_c/sdatateks.h"
+
+1187939652 e:\prg\bv21\bv2data\ag3070file.h
+	"sboard.h"
+
+1188361194 e:\prg\bv21\bv2data\agsj50file.c
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+	"agsj50file.h"
+	"../sdata_c/sdatateks.h"
+
+1187939616 e:\prg\bv21\bv2data\agsj50file.h
+	"sboard.h"
+
+1188361203 e:\prg\bv21\bv2data\beeveefile.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"beeveefile.h"
+	"../sdata_c/sdatateks.h"
+
+1187939624 e:\prg\bv21\bv2data\beeveefile.h
+	"sboard.h"
+
+1187939370 e:\prg\bv21\bv2data\cmpdevs.c
+	"cmpdevs.h"
+
+1187939630 e:\prg\bv21\bv2data\cmpdevs.h
+	"sboard.h"
+
+1188361251 e:\prg\bv21\bv2data\export.c
+	"../bv2/bv2explacement.h"
+	"export.h"
+	"unitconv.h"
+
+1187939636 e:\prg\bv21\bv2data\export.h
+	"sboard.h"
+
+1187939714 e:\prg\bv21\bv2data\unitconv.h
+	"sboard.h"
+
+1188361264 e:\prg\bv21\bv2data\fabfile.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<math.h>
+	"sboard.h"
+	"../sdata_c/sdatateks.h"
+
+1188361273 e:\prg\bv21\bv2data\gencadfile.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<math.h>
+	"gencadfile.h"
+	"../sdata_c/sdatateks.h"
+
+1187939668 e:\prg\bv21\bv2data\gencadfile.h
+	"sboard.h"
+
+1188361288 e:\prg\bv21\bv2data\generalxy.c
+	<stdio.h>
+	<stdlib.h>
+	"generalxy.h"
+	"../sdata_c/sdatateks.h"
+
+1187939676 e:\prg\bv21\bv2data\generalxy.h
+	"sboard.h"
+
+1188361296 e:\prg\bv21\bv2data\genrad228xfile.c
+	<stdio.h>
+	<string.h>
+	"genrad228xfile.h"
+	"../sdata_c/sdatateks.h"
+
+1187939682 e:\prg\bv21\bv2data\genrad228xfile.h
+	"sboard.h"
+
+1188361308 e:\prg\bv21\bv2data\placefile.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"placefile.h"
+	"../sdata_c/sdatateks.h"
+	"unitconv.h"
+
+1187939688 e:\prg\bv21\bv2data\placefile.h
+	"sboard.h"
+
+1188361126 e:\prg\bv21\bv2data\ppcbfile.c
+	<stdio.h>
+	<string.h>
+	"sboard.h"
+	"../sdata_c/sdatateks.h"
+	"unitconv.h"
+	"ppcbfile.h"
+
+1187939696 e:\prg\bv21\bv2data\ppcbfile.h
+	<Carbon/Carbon.h>
+	"sboard.h"
+
+1187939410 e:\prg\bv21\bv2data\sboard.c
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+	"sboard.h"
+
+1188361313 e:\prg\bv21\bv2data\unicampcb.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<math.h>
+	"sboard.h"
+	"../sdata_c/sdatateks.h"
+
+1187939922 e:\prg\bv21\sdata_c\sdata.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"sdata.h"
+
+1188361330 e:\prg\bv21\sdata_c\sdatateks.c
+	<string.h>
+	<stdlib.h>
+	"sdatateks.h"
+	"../steks_c/stext.h"
+
+1187939956 e:\prg\bv21\steks_c\stext.c
+	<string.h>
+	<stdlib.h>
+
+1187939660 e:\prg\bv21\bv2data\fabfile.h
+	"sboard.h"
+
+1187939710 e:\prg\bv21\bv2data\unicampcb.h
+	"sboard.h"
+
+1194252352 e:\prg\bv21\sources\bv2\bv2.c
+	<windows.h>
+	"resource.h"
+	<commdlg.h>
+	<commctrl.h>
+	"../bv2data/beeveefile.h"
+	"../bv2data/ag3070file.h"
+	"../bv2data/agsj50file.h"
+	"../bv2data/genrad228xfile.h"
+	"../bv2data/generalxy.h"
+	"../bv2data/gencadfile.h"
+	"../bv2data/fabfile.h"
+	"../bv2data/unicampcb.h"
+	"../bv2data/ppcbfile.h"
+	"../bv2data/export.h"
+	"../bv2data/cmpdevs.h"
+	"BV2.h"
+	"toolbox.h"
+	"bv2draw.h"
+	"bv2toolbar.h"
+	"bv2object.h"
+	"bv2find.h"
+	"statusbar.h"
+	"bv2import.h"
+	"bv2option.h"
+	"bv2connect.h"
+	"bv2recents.h"
+	"bv2placement.h"
+	"bv2mergedlg.h"
+	"bv2explacement.h"
+	"bv2loadex.h"
+	"bv2devicendlg.h"
+	"../slog_c/slog.h"
+
+1194252352 /slog.h"
+
+1192611847 e:\prg\bv21\sources\bv2\resource.h
+
+1187939624 e:\prg\bv21\sources\bv2data\beeveefile.h
+	"sboard.h"
+
+1192523707 e:\prg\bv21\sources\bv2data\sboard.h
+	<stdio.h>
+	"../sdata_c/sdata.h"
+	"../sdata_c/sdatateks.h"
+	"../steks_c/stext.h"
+
+1187940012 e:\prg\bv21\sources\steks_c\stext.h
+
+1187939652 e:\prg\bv21\sources\bv2data\ag3070file.h
+	"sboard.h"
+
+1187939616 e:\prg\bv21\sources\bv2data\agsj50file.h
+	"sboard.h"
+
+1187939682 e:\prg\bv21\sources\bv2data\genrad228xfile.h
+	"sboard.h"
+
+1187939676 e:\prg\bv21\sources\bv2data\generalxy.h
+	"sboard.h"
+
+1187939668 e:\prg\bv21\sources\bv2data\gencadfile.h
+	"sboard.h"
+
+1187939660 e:\prg\bv21\sources\bv2data\fabfile.h
+	"sboard.h"
+
+1187939710 e:\prg\bv21\sources\bv2data\unicampcb.h
+	"sboard.h"
+
+1187939696 e:\prg\bv21\sources\bv2data\ppcbfile.h
+	<Carbon/Carbon.h>
+	"sboard.h"
+
+1187939636 e:\prg\bv21\sources\bv2data\export.h
+	"sboard.h"
+
+1194251731 e:\prg\bv21\sources\bv2data\cmpdevs.h
+	"sboard.h"
+
+1194257444 e:\prg\bv21\sources\bv2\bv2.h
+	<windows.h>
+	"resource.h"
+	"../bv2data/sboard.h"
+
+1187939582 e:\prg\bv21\sources\bv2\toolbox.h
+	<windows.h>
+
+1191045643 e:\prg\bv21\sources\bv2\bv2draw.h
+	<windows.h>
+	"../sdata_c/sdata.h"
+	"../bv2data/sboard.h"
+
+1187939588 e:\prg\bv21\sources\bv2\bv2toolbar.h
+	<windows.h>
+
+1187939588 e:\prg\bv21\sources\bv2\bv2object.h
+	<windows.h>
+
+1187939588 e:\prg\bv21\sources\bv2\bv2find.h
+	<windows.h>
+
+1188205460 e:\prg\bv21\sources\bv2\statusbar.h
+	<windows.h>
+
+1189484233 e:\prg\bv21\sources\bv2\bv2import.h
+	<windows.h>
+
+1189488390 e:\prg\bv21\sources\bv2\bv2option.h
+	<windows.h>
+
+1187939510 e:\prg\bv21\sources\bv2\bv2connect.h
+	<windows.h>
+
+1187939588 e:\prg\bv21\sources\bv2\bv2recents.h
+	<windows.h>
+
+1188359155 e:\prg\bv21\sources\bv2\bv2placement.h
+	<windows.h>
+	"../bv2data/placefile.h"
+
+1187939688 e:\prg\bv21\sources\bv2data\placefile.h
+	"sboard.h"
+
+1187939588 e:\prg\bv21\sources\bv2\bv2mergedlg.h
+	<windows.h>
+
+1188359177 e:\prg\bv21\sources\bv2\bv2explacement.h
+	<windows.h>
+	"../bv2data/export.h"
+
+1187939588 e:\prg\bv21\sources\bv2\bv2loadex.h
+	<windows.h>
+
+1194257444 e:\prg\bv21\sources\bv2\bv2.rc
+	"windows.h"
+	"resource.h"
+	"bv2.h"
+
+1187939186 e:\prg\bv21\sources\bv2\bv2connect.c
+	"bv2winmain.h"
+	"bv2.h"
+	"bv2draw.h"
+	"toolbox.h"
+	"bv2connect.h"
+
+1188391451 e:\prg\bv21\sources\bv2\bv2winmain.h
+	<windows.h>
+	<commdlg.h>
+	<commctrl.h>
+	<windowsx.h>
+	"resource.h"
+	<stdlib.h>
+	<string.h>
+	"../sdata_c/sdata.h"
+	"../sdata_c/sdatateks.h"
+	"../bv2data/sboard.h"
+
+1193291668 e:\prg\bv21\sources\bv2\bv2draw.c
+	"bv2winmain.h"
+	"BV2.h"
+	"bv2toolbar.h"
+	"bv2draw.h"
+	"bv2object.h"
+	"statusbar.h"
+	"bv2find.h"
+	"bv2option.h"
+	"bv2connect.h"
+
+1188359221 e:\prg\bv21\sources\bv2\bv2editdev.c
+	<windows.h>
+	<windowsx.h>
+	"resource.h"
+	"bv2.h"
+	"bv2draw.h"
+	"../bv2data/sboard.h"
+
+1187939186 e:\prg\bv21\sources\bv2\bv2explacement.c
+	"BV2.h"
+	"resource.h"
+	"bv2explacement.h"
+
+1192535853 e:\prg\bv21\sources\bv2\bv2find.c
+	"bv2find.h"
+	"bv2.h"
+	"bv2draw.h"
+	"toolbox.h"
+	"statusbar.h"
+	"bv2object.h"
+	"..\sdata_c\sdatateks.h"
+
+1187939186 e:\prg\bv21\sources\bv2\bv2findex.c
+	"BV2.h"
+
+1189484270 e:\prg\bv21\sources\bv2\bv2import.c
+	"bv2import.h"
+	"resource.h"
+	"toolbox.h"
+
+1187939186 e:\prg\bv21\sources\bv2\bv2loadex.c
+	<windows.h>
+	"resource.h"
+
+1189496990 e:\prg\bv21\sources\bv2\bv2merge.c
+	"../bv2data/sboard.h"
+
+1187939186 e:\prg\bv21\sources\bv2\bv2mergedlg.c
+	"bv2import.h"
+	"resource.h"
+	"toolbox.h"
+	"bv2mergedlg.h"
+
+1187939184 e:\prg\bv21\sources\bv2\bv2object.c
+	"bv2.h"
+	"bv2object.h"
+	"statusbar.h"
+	"bv2draw.h"
+	"bv2find.h"
+	"resource.h"
+
+1189488717 e:\prg\bv21\sources\bv2\bv2option.c
+	"bv2option.h"
+	"resource.h"
+	"../bv2data/sboard.h"
+
+1187939204 e:\prg\bv21\sources\bv2\bv2placement.c
+	"resource.h"
+	"bv2placement.h"
+	"..\steks_c\stext.h"
+
+1191047453 e:\prg\bv21\sources\bv2\bv2properties.c
+	"resource.h"
+	"../bv2data/sboard.h"
+	"bv2.h"
+
+1189060012 e:\prg\bv21\sources\bv2\bv2recents.c
+	"bv2recents.h"
+	"..\sdata_c\sdata.h"
+	"toolbox.h"
+	"resource.h"
+
+1191045409 e:\prg\bv21\sources\bv2\bv2toolbar.c
+	"bv2toolbar.h"
+	"resource.h"
+	<commctrl.h>
+
+1187939232 e:\prg\bv21\sources\bv2\bv2unit.c
+	<windows.h>
+	"resource.h"
+
+1188464176 e:\prg\bv21\sources\bv2\licence.c
+	"BV2.h"
+
+1189495064 e:\prg\bv21\sources\bv2\signalndlg.c
+	<windows.h>
+	"resource.h"
+	"..\steks_c\stext.h"
+
+1188205946 e:\prg\bv21\sources\bv2\statusbar.c
+	<windows.h>
+	<commctrl.h>
+	"statusbar.h"
+	"resource.h"
+
+1187939300 e:\prg\bv21\sources\bv2\toolbox.c
+	<windows.h>
+
+1187939342 e:\prg\bv21\sources\bv2data\ag3070file.c
+	"ag3070file.h"
+	<stdio.h>
+	<string.h>
+	"../steks_c/stext.h"
+	"../sdata_c/sdatateks.h"
+
+1192525429 e:\prg\bv21\sources\bv2data\agsj50file.c
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+	"agsj50file.h"
+	"../sdata_c/sdatateks.h"
+
+1192520673 e:\prg\bv21\sources\bv2data\beeveefile.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"beeveefile.h"
+	"../sdata_c/sdatateks.h"
+
+1194252466 e:\prg\bv21\sources\bv2data\cmpdevs.c
+	"cmpdevs.h"
+	"../sdata_c/sdatateks.h"
+
+1192521857 e:\prg\bv21\sources\bv2data\export.c
+	"../bv2/bv2explacement.h"
+	"export.h"
+	"unitconv.h"
+
+1187939714 e:\prg\bv21\sources\bv2data\unitconv.h
+	"sboard.h"
+
+1192520024 e:\prg\bv21\sources\bv2data\fabfile.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<math.h>
+	"sboard.h"
+	"../sdata_c/sdatateks.h"
+
+1192520043 e:\prg\bv21\sources\bv2data\gencadfile.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<math.h>
+	"gencadfile.h"
+	"../sdata_c/sdatateks.h"
+
+1192535578 e:\prg\bv21\sources\bv2data\generalxy.c
+	<windows.h>
+	<stdio.h>
+	<stdlib.h>
+	"generalxy.h"
+	"../sdata_c/sdatateks.h"
+
+1188361296 e:\prg\bv21\sources\bv2data\genrad228xfile.c
+	<stdio.h>
+	<string.h>
+	"genrad228xfile.h"
+	"../sdata_c/sdatateks.h"
+
+1192519932 e:\prg\bv21\sources\bv2data\placefile.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"placefile.h"
+	"../sdata_c/sdatateks.h"
+	"unitconv.h"
+
+1192519970 e:\prg\bv21\sources\bv2data\ppcbfile.c
+	<stdio.h>
+	<string.h>
+	"sboard.h"
+	"../sdata_c/sdatateks.h"
+	"unitconv.h"
+	"ppcbfile.h"
+
+1192537395 e:\prg\bv21\sources\bv2data\sboard.c
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+	"sboard.h"
+
+1192520082 e:\prg\bv21\sources\bv2data\unicampcb.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<math.h>
+	"sboard.h"
+	"../sdata_c/sdatateks.h"
+
+1187939956 e:\prg\bv21\sources\steks_c\stext.c
+	<string.h>
+	<stdlib.h>
+
+1187939972 e:\prg\bv21\sources\sdata_c\sdata.h
+
+1187939986 e:\prg\bv21\sources\sdata_c\sdatateks.h
+	"sdata.h"
+
+1187939922 e:\prg\bv21\sources\sdata_c\sdata.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"sdata.h"
+
+1188361330 e:\prg\bv21\sources\sdata_c\sdatateks.c
+	<string.h>
+	<stdlib.h>
+	"sdatateks.h"
+	"../steks_c/stext.h"
+
+1192527123 e:\prg\bv21\sources\bv2data\bomattr.c
+	<stdio.h>
+	<stdlib.h>
+	"bomattr.h"
+	"../sdata_c/sdatateks.h"
+
+1189483985 e:\prg\bv21\sources\bv2data\bomattr.h
+	"sboard.h"
+
+1192516421 e:\prg\bv21\sources\bv2\bv2devicendlg.c
+	<windows.h>
+	"resource.h"
+	"..\steks_c\stext.h"
+
+1189494654 e:\prg\bv21\sources\bv2\bv2devicendlg.h
+
+1191052647 e:\prg\bv21\sources\bv2data\movebrd.c
+	"sboard.h"
+	<windows.h>
+
+1192525097 e:\prg\bv21\sources\bv2\bv2offsetdlg.c
+	<windows.h>
+	"resource.h"
+	"..\steks_c\stext.h"
+
+1143086580 e:\prg\bv21\sources\slog_c\slog.c
+	<stdio.h>
+	<time.h>
+	<string.h>
+	"slog.h"
+
+1144303440 e:\prg\bv21\sources\slog_c\slog.h
+
+1187939342 source:/home/sihab/PRG/BV21/Sources/bv2data/ag3070file.c
+	"ag3070file.h"
+	<stdio.h>
+	<string.h>
+	"../steks_c/stext.h"
+	"../sdata_c/sdatateks.h"
+
+1187939652 /home/sihab/PRG/BV21/Sources/bv2data/ag3070file.h
+	"sboard.h"
+
+1192523708 /home/sihab/PRG/BV21/Sources/bv2data/sboard.h
+	<stdio.h>
+	"../sdata_c/sdata.h"
+	"../sdata_c/sdatateks.h"
+	"../steks_c/stext.h"
+
+1187939972 /home/sihab/PRG/BV21/Sources/sdata_c/sdata.h
+
+1187939986 /home/sihab/PRG/BV21/Sources/sdata_c/sdatateks.h
+	"sdata.h"
+
+1187940012 /home/sihab/PRG/BV21/Sources/steks_c/stext.h
+
+1188361298 source:/home/sihab/PRG/BV21/Sources/bv2data/genrad228xfile.c
+	<stdio.h>
+	<string.h>
+	"genrad228xfile.h"
+	"../sdata_c/sdatateks.h"
+
+1187939682 /home/sihab/PRG/BV21/Sources/bv2data/genrad228xfile.h
+	"sboard.h"
+
+1187939922 source:/home/sihab/PRG/BV21/Sources/sdata_c/sdata.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"sdata.h"
+
+1188361332 source:/home/sihab/PRG/BV21/Sources/sdata_c/sdatateks.c
+	<string.h>
+	<stdlib.h>
+	"sdatateks.h"
+	"../steks_c/stext.h"
+
+1187939956 source:/home/sihab/PRG/BV21/Sources/steks_c/stext.c
+	<string.h>
+	<stdlib.h>
+
+1194252354 source:/home/sihab/PRG/BV21/Sources/BV2/BV2.c
+	<windows.h>
+	"resource.h"
+	<commdlg.h>
+	<commctrl.h>
+	"../bv2data/beeveefile.h"
+	"../bv2data/ag3070file.h"
+	"../bv2data/agsj50file.h"
+	"../bv2data/genrad228xfile.h"
+	"../bv2data/generalxy.h"
+	"../bv2data/gencadfile.h"
+	"../bv2data/fabfile.h"
+	"../bv2data/unicampcb.h"
+	"../bv2data/ppcbfile.h"
+	"../bv2data/export.h"
+	"../bv2data/cmpdevs.h"
+	"BV2.h"
+	"toolbox.h"
+	"bv2draw.h"
+	"bv2toolbar.h"
+	"bv2object.h"
+	"bv2find.h"
+	"statusbar.h"
+	"bv2import.h"
+	"bv2option.h"
+	"bv2connect.h"
+	"bv2recents.h"
+	"bv2placement.h"
+	"bv2mergedlg.h"
+	"bv2explacement.h"
+	"bv2loadex.h"
+	"bv2devicendlg.h"
+	"../slog_c/slog.h"
+
+1192611848 /home/sihab/PRG/BV21/Sources/BV2/resource.h
+
+1187939624 /home/sihab/PRG/BV21/Sources/bv2data/beeveefile.h
+	"sboard.h"
+
+1187939616 /home/sihab/PRG/BV21/Sources/bv2data/agsj50file.h
+	"sboard.h"
+
+1187939676 /home/sihab/PRG/BV21/Sources/bv2data/generalxy.h
+	"sboard.h"
+
+1187939668 /home/sihab/PRG/BV21/Sources/bv2data/gencadfile.h
+	"sboard.h"
+
+1187939660 /home/sihab/PRG/BV21/Sources/bv2data/fabfile.h
+	"sboard.h"
+
+1187939710 /home/sihab/PRG/BV21/Sources/bv2data/unicampcb.h
+	"sboard.h"
+
+1187939696 /home/sihab/PRG/BV21/Sources/bv2data/ppcbfile.h
+	<Carbon/Carbon.h>
+	"sboard.h"
+
+1187939636 /home/sihab/PRG/BV21/Sources/bv2data/export.h
+	"sboard.h"
+
+1194251732 /home/sihab/PRG/BV21/Sources/bv2data/cmpdevs.h
+	"sboard.h"
+
+1187939582 /home/sihab/PRG/BV21/Sources/BV2/toolbox.h
+	<windows.h>
+
+1191045644 /home/sihab/PRG/BV21/Sources/BV2/bv2draw.h
+	<windows.h>
+	"../sdata_c/sdata.h"
+	"../bv2data/sboard.h"
+
+1187939588 /home/sihab/PRG/BV21/Sources/BV2/bv2toolbar.h
+	<windows.h>
+
+1187939588 /home/sihab/PRG/BV21/Sources/BV2/bv2object.h
+	<windows.h>
+
+1187939588 /home/sihab/PRG/BV21/Sources/BV2/bv2find.h
+	<windows.h>
+
+1188205460 /home/sihab/PRG/BV21/Sources/BV2/statusbar.h
+	<windows.h>
+
+1189484234 /home/sihab/PRG/BV21/Sources/BV2/bv2import.h
+	<windows.h>
+
+1189488392 /home/sihab/PRG/BV21/Sources/BV2/bv2option.h
+	<windows.h>
+
+1187939510 /home/sihab/PRG/BV21/Sources/BV2/bv2connect.h
+	<windows.h>
+
+1187939588 /home/sihab/PRG/BV21/Sources/BV2/bv2recents.h
+	<windows.h>
+
+1188359156 /home/sihab/PRG/BV21/Sources/BV2/bv2placement.h
+	<windows.h>
+	"../bv2data/placefile.h"
+
+1187939688 /home/sihab/PRG/BV21/Sources/bv2data/placefile.h
+	"sboard.h"
+
+1187939588 /home/sihab/PRG/BV21/Sources/BV2/bv2mergedlg.h
+	<windows.h>
+
+1188359178 /home/sihab/PRG/BV21/Sources/BV2/bv2explacement.h
+	<windows.h>
+	"../bv2data/export.h"
+
+1187939588 /home/sihab/PRG/BV21/Sources/BV2/bv2loadex.h
+	<windows.h>
+
+1189494656 /home/sihab/PRG/BV21/Sources/BV2/bv2devicendlg.h
+
+1144303440 /home/sihab/PRG/BV21/Sources/slog_c/slog.h
+
+1217942562 source:/home/sihab/PRG/BV21/Sources/BV2/bv2connect.c
+	"bv2winmain.h"
+	"BV2.h"
+	"bv2draw.h"
+	"toolbox.h"
+	"bv2connect.h"
+
+1188391452 /home/sihab/PRG/BV21/Sources/BV2/bv2winmain.h
+	<windows.h>
+	<commdlg.h>
+	<commctrl.h>
+	<windowsx.h>
+	"resource.h"
+	<stdlib.h>
+	<string.h>
+	"../sdata_c/sdata.h"
+	"../sdata_c/sdatateks.h"
+	"../bv2data/sboard.h"
+
+1194257446 /home/sihab/PRG/BV21/Sources/BV2/bv2.h
+	<windows.h>
+	"resource.h"
+	"../bv2data/sboard.h"
+
+1217946825 source:/home/sihab/PRG/BV21/Sources/BV2/bv2devicendlg.c
+	<windows.h>
+	"resource.h"
+	"../steks_c/stext.h"
+
+1217942569 source:/home/sihab/PRG/BV21/Sources/BV2/bv2draw.c
+	"bv2winmain.h"
+	"BV2.h"
+	"bv2toolbar.h"
+	"bv2draw.h"
+	"bv2object.h"
+	"statusbar.h"
+	"bv2find.h"
+	"bv2option.h"
+	"bv2connect.h"
+
+1217942584 source:/home/sihab/PRG/BV21/Sources/BV2/bv2editdev.c
+	<windows.h>
+	<windowsx.h>
+	"resource.h"
+	"BV2.h"
+	"bv2draw.h"
+	"../bv2data/sboard.h"
+
+1217942587 source:/home/sihab/PRG/BV21/Sources/BV2/bv2explacement.c
+	"BV2.h"
+	"resource.h"
+	"bv2explacement.h"
+
+1217946840 source:/home/sihab/PRG/BV21/Sources/BV2/bv2find.c
+	"bv2find.h"
+	"BV2.h"
+	"bv2draw.h"
+	"toolbox.h"
+	"statusbar.h"
+	"bv2object.h"
+	"../sdata_c/sdatateks.h"
+
+1217942601 source:/home/sihab/PRG/BV21/Sources/BV2/bv2findex.c
+	"BV2.h"
+
+1189484272 source:/home/sihab/PRG/BV21/Sources/BV2/bv2import.c
+	"bv2import.h"
+	"resource.h"
+	"toolbox.h"
+
+1187939186 source:/home/sihab/PRG/BV21/Sources/BV2/bv2loadex.c
+	<windows.h>
+	"resource.h"
+
+1189496992 source:/home/sihab/PRG/BV21/Sources/BV2/bv2merge.c
+	"../bv2data/sboard.h"
+
+1187939186 source:/home/sihab/PRG/BV21/Sources/BV2/bv2mergedlg.c
+	"bv2import.h"
+	"resource.h"
+	"toolbox.h"
+	"bv2mergedlg.h"
+
+1217942608 source:/home/sihab/PRG/BV21/Sources/BV2/bv2object.c
+	"BV2.h"
+	"bv2object.h"
+	"statusbar.h"
+	"bv2draw.h"
+	"bv2find.h"
+	"resource.h"
+
+1217942449 source:/home/sihab/PRG/BV21/Sources/BV2/bv2offsetdlg.c
+	<windows.h>
+	"resource.h"
+	"../steks_c/stext.h"
+
+1189488718 source:/home/sihab/PRG/BV21/Sources/BV2/bv2option.c
+	"bv2option.h"
+	"resource.h"
+	"../bv2data/sboard.h"
+
+1217946850 source:/home/sihab/PRG/BV21/Sources/BV2/bv2placement.c
+	"resource.h"
+	"bv2placement.h"
+	"../steks_c/stext.h"
+
+1217946857 source:/home/sihab/PRG/BV21/Sources/BV2/bv2properties.c
+	"resource.h"
+	"../bv2data/sboard.h"
+	"BV2.h"
+
+1217948281 /home/sihab/PRG/BV21/Sources/BV2/BV2.h
+	<windows.h>
+	"resource.h"
+	"../bv2data/sboard.h"
+
+1217946867 source:/home/sihab/PRG/BV21/Sources/BV2/bv2recents.c
+	"bv2recents.h"
+	"../sdata_c/sdata.h"
+	"toolbox.h"
+	"resource.h"
+
+1191045410 source:/home/sihab/PRG/BV21/Sources/BV2/bv2toolbar.c
+	"bv2toolbar.h"
+	"resource.h"
+	<commctrl.h>
+
+1187939232 source:/home/sihab/PRG/BV21/Sources/BV2/bv2unit.c
+	<windows.h>
+	"resource.h"
+
+1188464178 source:/home/sihab/PRG/BV21/Sources/BV2/licence.c
+	"BV2.h"
+
+1217946876 source:/home/sihab/PRG/BV21/Sources/BV2/signalndlg.c
+	<windows.h>
+	"resource.h"
+	"../steks_c/stext.h"
+
+1188205946 source:/home/sihab/PRG/BV21/Sources/BV2/statusbar.c
+	<windows.h>
+	<commctrl.h>
+	"statusbar.h"
+	"resource.h"
+
+1187939300 source:/home/sihab/PRG/BV21/Sources/BV2/toolbox.c
+	<windows.h>
+
+1192525430 source:/home/sihab/PRG/BV21/Sources/bv2data/agsj50file.c
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+	"agsj50file.h"
+	"../sdata_c/sdatateks.h"
+
+1192520674 source:/home/sihab/PRG/BV21/Sources/bv2data/beeveefile.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"beeveefile.h"
+	"../sdata_c/sdatateks.h"
+
+1192527124 source:/home/sihab/PRG/BV21/Sources/bv2data/bomattr.c
+	<stdio.h>
+	<stdlib.h>
+	"bomattr.h"
+	"../sdata_c/sdatateks.h"
+
+1189483986 /home/sihab/PRG/BV21/Sources/bv2data/bomattr.h
+	"sboard.h"
+
+1194252468 source:/home/sihab/PRG/BV21/Sources/bv2data/cmpdevs.c
+	"cmpdevs.h"
+	"../sdata_c/sdatateks.h"
+
+1217946885 source:/home/sihab/PRG/BV21/Sources/bv2data/export.c
+	"../BV2/bv2explacement.h"
+	"export.h"
+	"unitconv.h"
+
+1187939714 /home/sihab/PRG/BV21/Sources/bv2data/unitconv.h
+	"sboard.h"
+
+1192520026 source:/home/sihab/PRG/BV21/Sources/bv2data/fabfile.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<math.h>
+	"sboard.h"
+	"../sdata_c/sdatateks.h"
+
+1192520044 source:/home/sihab/PRG/BV21/Sources/bv2data/gencadfile.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<math.h>
+	"gencadfile.h"
+	"../sdata_c/sdatateks.h"
+
+1192535580 source:/home/sihab/PRG/BV21/Sources/bv2data/generalxy.c
+	<windows.h>
+	<stdio.h>
+	<stdlib.h>
+	"generalxy.h"
+	"../sdata_c/sdatateks.h"
+
+1191052648 source:/home/sihab/PRG/BV21/Sources/bv2data/movebrd.c
+	"sboard.h"
+	<windows.h>
+
+1192519934 source:/home/sihab/PRG/BV21/Sources/bv2data/placefile.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"placefile.h"
+	"../sdata_c/sdatateks.h"
+	"unitconv.h"
+
+1192519972 source:/home/sihab/PRG/BV21/Sources/bv2data/ppcbfile.c
+	<stdio.h>
+	<string.h>
+	"sboard.h"
+	"../sdata_c/sdatateks.h"
+	"unitconv.h"
+	"ppcbfile.h"
+
+1192537396 source:/home/sihab/PRG/BV21/Sources/bv2data/sboard.c
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+	"sboard.h"
+
+1192520084 source:/home/sihab/PRG/BV21/Sources/bv2data/unicampcb.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<math.h>
+	"sboard.h"
+	"../sdata_c/sdatateks.h"
+
+1231169983 source:/home/sihab/PRG/BV21/svn/beevee/BV2/BV2.c
+	<windows.h>
+	"resource.h"
+	<commdlg.h>
+	<commctrl.h>
+	"../bv2data/beeveefile.h"
+	"../bv2data/ag3070file.h"
+	"../bv2data/agsj50file.h"
+	"../bv2data/genrad228xfile.h"
+	"../bv2data/generalxy.h"
+	"../bv2data/gencadfile.h"
+	"../bv2data/fabfile.h"
+	"../bv2data/unicampcb.h"
+	"../bv2data/ppcbfile.h"
+	"../bv2data/export.h"
+	"../bv2data/cmpdevs.h"
+	"BV2.h"
+	"toolbox.h"
+	"bv2draw.h"
+	"bv2toolbar.h"
+	"bv2object.h"
+	"bv2find.h"
+	"statusbar.h"
+	"bv2import.h"
+	"bv2option.h"
+	"bv2connect.h"
+	"bv2recents.h"
+	"bv2placement.h"
+	"bv2mergedlg.h"
+	"bv2explacement.h"
+	"bv2loadex.h"
+	"bv2devicendlg.h"
+	"../slog_c/slog.h"
+
+1231170205 /home/sihab/PRG/BV21/svn/beevee/BV2/resource.h
+
+1231170205 /home/sihab/PRG/BV21/svn/beevee/bv2data/beeveefile.h
+	"sboard.h"
+
+1231170204 /home/sihab/PRG/BV21/svn/beevee/bv2data/sboard.h
+	<stdio.h>
+	"../sdata_c/sdata.h"
+	"../sdata_c/sdatateks.h"
+	"../steks_c/stext.h"
+
+1231170208 /home/sihab/PRG/BV21/svn/beevee/sdata_c/sdata.h
+
+1231170208 /home/sihab/PRG/BV21/svn/beevee/sdata_c/sdatateks.h
+	"sdata.h"
+
+1231170208 /home/sihab/PRG/BV21/svn/beevee/steks_c/stext.h
+
+1231170207 /home/sihab/PRG/BV21/svn/beevee/bv2data/ag3070file.h
+	"sboard.h"
+
+1231170205 /home/sihab/PRG/BV21/svn/beevee/bv2data/agsj50file.h
+	"sboard.h"
+
+1231170207 /home/sihab/PRG/BV21/svn/beevee/bv2data/genrad228xfile.h
+	"sboard.h"
+
+1231170207 /home/sihab/PRG/BV21/svn/beevee/bv2data/generalxy.h
+	"sboard.h"
+
+1231170207 /home/sihab/PRG/BV21/svn/beevee/bv2data/gencadfile.h
+	"sboard.h"
+
+1231170207 /home/sihab/PRG/BV21/svn/beevee/bv2data/fabfile.h
+	"sboard.h"
+
+1231170208 /home/sihab/PRG/BV21/svn/beevee/bv2data/unicampcb.h
+	"sboard.h"
+
+1231170208 /home/sihab/PRG/BV21/svn/beevee/bv2data/ppcbfile.h
+	<Carbon/Carbon.h>
+	"sboard.h"
+
+1231170207 /home/sihab/PRG/BV21/svn/beevee/bv2data/export.h
+	"sboard.h"
+
+1231170204 /home/sihab/PRG/BV21/svn/beevee/bv2data/cmpdevs.h
+	"sboard.h"
+
+1231171664 /home/sihab/PRG/BV21/svn/beevee/BV2/BV2.h
+	<windows.h>
+	"resource.h"
+	"../bv2data/sboard.h"
+
+1231170207 /home/sihab/PRG/BV21/svn/beevee/BV2/toolbox.h
+	<windows.h>
+
+1231170205 /home/sihab/PRG/BV21/svn/beevee/BV2/bv2draw.h
+	<windows.h>
+	"../sdata_c/sdata.h"
+	"../bv2data/sboard.h"
+
+1231170206 /home/sihab/PRG/BV21/svn/beevee/BV2/bv2toolbar.h
+	<windows.h>
+
+1231170206 /home/sihab/PRG/BV21/svn/beevee/BV2/bv2object.h
+	<windows.h>
+
+1231170205 /home/sihab/PRG/BV21/svn/beevee/BV2/bv2find.h
+	<windows.h>
+
+1231170206 /home/sihab/PRG/BV21/svn/beevee/BV2/statusbar.h
+	<windows.h>
+
+1231170205 /home/sihab/PRG/BV21/svn/beevee/BV2/bv2import.h
+	<windows.h>
+
+1231170206 /home/sihab/PRG/BV21/svn/beevee/BV2/bv2option.h
+	<windows.h>
+
+1231170205 /home/sihab/PRG/BV21/svn/beevee/BV2/bv2connect.h
+	<windows.h>
+
+1231170206 /home/sihab/PRG/BV21/svn/beevee/BV2/bv2recents.h
+	<windows.h>
+
+1231170206 /home/sihab/PRG/BV21/svn/beevee/BV2/bv2placement.h
+	<windows.h>
+	"../bv2data/placefile.h"
+
+1231170208 /home/sihab/PRG/BV21/svn/beevee/bv2data/placefile.h
+	"sboard.h"
+
+1231170206 /home/sihab/PRG/BV21/svn/beevee/BV2/bv2mergedlg.h
+	<windows.h>
+
+1231170205 /home/sihab/PRG/BV21/svn/beevee/BV2/bv2explacement.h
+	<windows.h>
+	"../bv2data/export.h"
+
+1231170205 /home/sihab/PRG/BV21/svn/beevee/BV2/bv2loadex.h
+	<windows.h>
+
+1219520466 /home/sihab/PRG/BV21/svn/beevee/BV2/bv2devicendlg.h
+
+1219520462 /home/sihab/PRG/BV21/svn/beevee/slog_c/slog.h
+
+1231170205 source:/home/sihab/PRG/BV21/svn/beevee/BV2/BV2.rc
+	"windows.h"
+	"resource.h"
+	"BV2.h"
+	"version.h"
+
+1231171106 /home/sihab/PRG/BV21/svn/beevee/BV2/version.h
+
+1231170205 source:/home/sihab/PRG/BV21/svn/beevee/BV2/bv2connect.c
+	"bv2winmain.h"
+	"BV2.h"
+	"bv2draw.h"
+	"toolbox.h"
+	"bv2connect.h"
+
+1231170206 /home/sihab/PRG/BV21/svn/beevee/BV2/bv2winmain.h
+	<windows.h>
+	<commdlg.h>
+	<commctrl.h>
+	<windowsx.h>
+	"resource.h"
+	<stdlib.h>
+	<string.h>
+	"../sdata_c/sdata.h"
+	"../sdata_c/sdatateks.h"
+	"../bv2data/sboard.h"
+
+1231160133 source:/home/sihab/PRG/BV21/svn/beevee/BV2/bv2devicendlg.c
+	<windows.h>
+	"resource.h"
+	"../steks_c/stext.h"
+
+1231170205 source:/home/sihab/PRG/BV21/svn/beevee/BV2/bv2draw.c
+	"bv2winmain.h"
+	"BV2.h"
+	"bv2toolbar.h"
+	"bv2draw.h"
+	"bv2object.h"
+	"statusbar.h"
+	"bv2find.h"
+	"bv2option.h"
+	"bv2connect.h"
+
+1250589653 source:/home/sihab/PRG/BV21/svn/beevee/BV2/bv2editdev.c
+	<windows.h>
+	<windowsx.h>
+	"resource.h"
+	"BV2.h"
+	"bv2draw.h"
+	"../bv2data/sboard.h"
+
+1231170205 source:/home/sihab/PRG/BV21/svn/beevee/BV2/bv2explacement.c
+	"BV2.h"
+	"resource.h"
+	"bv2explacement.h"
+
+1231170205 source:/home/sihab/PRG/BV21/svn/beevee/BV2/bv2find.c
+	"bv2find.h"
+	"BV2.h"
+	"bv2draw.h"
+	"toolbox.h"
+	"statusbar.h"
+	"bv2object.h"
+	"../sdata_c/sdatateks.h"
+
+1231170205 source:/home/sihab/PRG/BV21/svn/beevee/BV2/bv2findex.c
+	"BV2.h"
+
+1231170205 source:/home/sihab/PRG/BV21/svn/beevee/BV2/bv2import.c
+	"bv2import.h"
+	"resource.h"
+	"toolbox.h"
+
+1231170205 source:/home/sihab/PRG/BV21/svn/beevee/BV2/bv2loadex.c
+	<windows.h>
+	"resource.h"
+
+1231170205 source:/home/sihab/PRG/BV21/svn/beevee/BV2/bv2merge.c
+	"../bv2data/sboard.h"
+
+1231170205 source:/home/sihab/PRG/BV21/svn/beevee/BV2/bv2mergedlg.c
+	"bv2import.h"
+	"resource.h"
+	"toolbox.h"
+	"bv2mergedlg.h"
+
+1231170206 source:/home/sihab/PRG/BV21/svn/beevee/BV2/bv2object.c
+	"BV2.h"
+	"bv2object.h"
+	"statusbar.h"
+	"bv2draw.h"
+	"bv2find.h"
+	"resource.h"
+
+1231160134 source:/home/sihab/PRG/BV21/svn/beevee/BV2/bv2offsetdlg.c
+	<windows.h>
+	"resource.h"
+	"../steks_c/stext.h"
+
+1231170206 source:/home/sihab/PRG/BV21/svn/beevee/BV2/bv2option.c
+	"bv2option.h"
+	"resource.h"
+	"../bv2data/sboard.h"
+
+1231170206 source:/home/sihab/PRG/BV21/svn/beevee/BV2/bv2placement.c
+	"resource.h"
+	"bv2placement.h"
+	"../steks_c/stext.h"
+
+1231170206 source:/home/sihab/PRG/BV21/svn/beevee/BV2/bv2properties.c
+	"resource.h"
+	"../bv2data/sboard.h"
+	"BV2.h"
+
+1231170206 source:/home/sihab/PRG/BV21/svn/beevee/BV2/bv2recents.c
+	"bv2recents.h"
+	"../sdata_c/sdata.h"
+	"toolbox.h"
+	"resource.h"
+
+1231170206 source:/home/sihab/PRG/BV21/svn/beevee/BV2/bv2toolbar.c
+	"bv2toolbar.h"
+	"resource.h"
+	<commctrl.h>
+
+1231170206 source:/home/sihab/PRG/BV21/svn/beevee/BV2/bv2unit.c
+	<windows.h>
+	"resource.h"
+
+1231170206 source:/home/sihab/PRG/BV21/svn/beevee/BV2/licence.c
+	"BV2.h"
+
+1231170206 source:/home/sihab/PRG/BV21/svn/beevee/BV2/signalndlg.c
+	<windows.h>
+	"resource.h"
+	"../steks_c/stext.h"
+
+1231170206 source:/home/sihab/PRG/BV21/svn/beevee/BV2/statusbar.c
+	<windows.h>
+	<commctrl.h>
+	"statusbar.h"
+	"resource.h"
+
+1231170206 source:/home/sihab/PRG/BV21/svn/beevee/BV2/toolbox.c
+	<windows.h>
+
+1231170207 source:/home/sihab/PRG/BV21/svn/beevee/bv2data/ag3070file.c
+	"ag3070file.h"
+	<stdio.h>
+	<string.h>
+	"../steks_c/stext.h"
+	"../sdata_c/sdatateks.h"
+
+1231170207 source:/home/sihab/PRG/BV21/svn/beevee/bv2data/agsj50file.c
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+	"agsj50file.h"
+	"../sdata_c/sdatateks.h"
+
+1231170207 source:/home/sihab/PRG/BV21/svn/beevee/bv2data/beeveefile.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"beeveefile.h"
+	"../sdata_c/sdatateks.h"
+
+1231170204 source:/home/sihab/PRG/BV21/svn/beevee/bv2data/bomattr.c
+	<stdio.h>
+	<stdlib.h>
+	"bomattr.h"
+	"../sdata_c/sdatateks.h"
+
+1231170207 /home/sihab/PRG/BV21/svn/beevee/bv2data/bomattr.h
+	"sboard.h"
+
+1231170204 source:/home/sihab/PRG/BV21/svn/beevee/bv2data/cmpdevs.c
+	"cmpdevs.h"
+	"../sdata_c/sdatateks.h"
+
+1231170207 source:/home/sihab/PRG/BV21/svn/beevee/bv2data/export.c
+	"../BV2/bv2explacement.h"
+	"export.h"
+	"unitconv.h"
+
+1231170208 /home/sihab/PRG/BV21/svn/beevee/bv2data/unitconv.h
+	"sboard.h"
+
+1231170207 source:/home/sihab/PRG/BV21/svn/beevee/bv2data/fabfile.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<math.h>
+	"sboard.h"
+	"../sdata_c/sdatateks.h"
+
+1250589090 source:/home/sihab/PRG/BV21/svn/beevee/bv2data/gencadfile.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<math.h>
+	"gencadfile.h"
+	"../sdata_c/sdatateks.h"
+
+1231170204 source:/home/sihab/PRG/BV21/svn/beevee/bv2data/generalxy.c
+	<windows.h>
+	<stdio.h>
+	<stdlib.h>
+	"generalxy.h"
+	"../sdata_c/sdatateks.h"
+
+1231170207 source:/home/sihab/PRG/BV21/svn/beevee/bv2data/genrad228xfile.c
+	<stdio.h>
+	<string.h>
+	"genrad228xfile.h"
+	"../sdata_c/sdatateks.h"
+
+1219520462 source:/home/sihab/PRG/BV21/svn/beevee/bv2data/movebrd.c
+	"sboard.h"
+	<windows.h>
+
+1231170207 source:/home/sihab/PRG/BV21/svn/beevee/bv2data/placefile.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"placefile.h"
+	"../sdata_c/sdatateks.h"
+	"unitconv.h"
+
+1231170208 source:/home/sihab/PRG/BV21/svn/beevee/bv2data/ppcbfile.c
+	<stdio.h>
+	<string.h>
+	"sboard.h"
+	"../sdata_c/sdatateks.h"
+	"unitconv.h"
+	"ppcbfile.h"
+
+1231170204 source:/home/sihab/PRG/BV21/svn/beevee/bv2data/sboard.c
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+	"sboard.h"
+
+1231170208 source:/home/sihab/PRG/BV21/svn/beevee/bv2data/unicampcb.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<math.h>
+	"sboard.h"
+	"../sdata_c/sdatateks.h"
+
+1231170208 source:/home/sihab/PRG/BV21/svn/beevee/sdata_c/sdata.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"sdata.h"
+
+1231170208 source:/home/sihab/PRG/BV21/svn/beevee/sdata_c/sdatateks.c
+	<string.h>
+	<stdlib.h>
+	"sdatateks.h"
+	"../steks_c/stext.h"
+
+1231170208 source:/home/sihab/PRG/BV21/svn/beevee/steks_c/stext.c
+	<string.h>
+	<stdlib.h>
+
+1219520462 source:/home/sihab/PRG/BV21/svn/beevee/slog_c/slog.c
+	<stdio.h>
+	<time.h>
+	<string.h>
+	"slog.h"
+
+1276349281 source:/srv/eshabe/Development/PRG/BV21/svn/beevee/BV2/BV2.c
+	<windows.h>
+	"resource.h"
+	<commdlg.h>
+	<commctrl.h>
+	"../bv2data/beeveefile.h"
+	"../bv2data/ag3070file.h"
+	"../bv2data/agsj50file.h"
+	"../bv2data/genrad228xfile.h"
+	"../bv2data/generalxy.h"
+	"../bv2data/gencadfile.h"
+	"../bv2data/fabfile.h"
+	"../bv2data/unicampcb.h"
+	"../bv2data/ppcbfile.h"
+	"../bv2data/export.h"
+	"../bv2data/cmpdevs.h"
+	"BV2.h"
+	"toolbox.h"
+	"bv2draw.h"
+	"bv2toolbar.h"
+	"bv2object.h"
+	"bv2find.h"
+	"statusbar.h"
+	"bv2import.h"
+	"bv2option.h"
+	"bv2connect.h"
+	"bv2recents.h"
+	"bv2placement.h"
+	"bv2mergedlg.h"
+	"bv2explacement.h"
+	"bv2loadex.h"
+	"bv2devicendlg.h"
+	"../slog_c/slog.h"
+
+1274200751 /srv/eshabe/Development/PRG/BV21/svn/beevee/BV2/resource.h
+
+1231170205 /srv/eshabe/Development/PRG/BV21/svn/beevee/bv2data/beeveefile.h
+	"sboard.h"
+
+1231170204 /srv/eshabe/Development/PRG/BV21/svn/beevee/bv2data/sboard.h
+	<stdio.h>
+	"../sdata_c/sdata.h"
+	"../sdata_c/sdatateks.h"
+	"../steks_c/stext.h"
+
+1231170208 /srv/eshabe/Development/PRG/BV21/svn/beevee/sdata_c/sdata.h
+
+1231170208 /srv/eshabe/Development/PRG/BV21/svn/beevee/sdata_c/sdatateks.h
+	"sdata.h"
+
+1231170208 /srv/eshabe/Development/PRG/BV21/svn/beevee/steks_c/stext.h
+
+1231170207 /srv/eshabe/Development/PRG/BV21/svn/beevee/bv2data/ag3070file.h
+	"sboard.h"
+
+1231170205 /srv/eshabe/Development/PRG/BV21/svn/beevee/bv2data/agsj50file.h
+	"sboard.h"
+
+1231170207 /srv/eshabe/Development/PRG/BV21/svn/beevee/bv2data/genrad228xfile.h
+	"sboard.h"
+
+1231170207 /srv/eshabe/Development/PRG/BV21/svn/beevee/bv2data/generalxy.h
+	"sboard.h"
+
+1231170207 /srv/eshabe/Development/PRG/BV21/svn/beevee/bv2data/gencadfile.h
+	"sboard.h"
+
+1231170207 /srv/eshabe/Development/PRG/BV21/svn/beevee/bv2data/fabfile.h
+	"sboard.h"
+
+1231170208 /srv/eshabe/Development/PRG/BV21/svn/beevee/bv2data/unicampcb.h
+	"sboard.h"
+
+1231170208 /srv/eshabe/Development/PRG/BV21/svn/beevee/bv2data/ppcbfile.h
+	<Carbon/Carbon.h>
+	"sboard.h"
+
+1231170207 /srv/eshabe/Development/PRG/BV21/svn/beevee/bv2data/export.h
+	"sboard.h"
+
+1231170204 /srv/eshabe/Development/PRG/BV21/svn/beevee/bv2data/cmpdevs.h
+	"sboard.h"
+
+1276352326 /srv/eshabe/Development/PRG/BV21/svn/beevee/BV2/BV2.h
+	<windows.h>
+	"resource.h"
+	"../bv2data/sboard.h"
+
+1231170207 /srv/eshabe/Development/PRG/BV21/svn/beevee/BV2/toolbox.h
+	<windows.h>
+
+1231170205 /srv/eshabe/Development/PRG/BV21/svn/beevee/BV2/bv2draw.h
+	<windows.h>
+	"../sdata_c/sdata.h"
+	"../bv2data/sboard.h"
+
+1231170206 /srv/eshabe/Development/PRG/BV21/svn/beevee/BV2/bv2toolbar.h
+	<windows.h>
+
+1231170206 /srv/eshabe/Development/PRG/BV21/svn/beevee/BV2/bv2object.h
+	<windows.h>
+
+1231170205 /srv/eshabe/Development/PRG/BV21/svn/beevee/BV2/bv2find.h
+	<windows.h>
+
+1231170206 /srv/eshabe/Development/PRG/BV21/svn/beevee/BV2/statusbar.h
+	<windows.h>
+
+1231170205 /srv/eshabe/Development/PRG/BV21/svn/beevee/BV2/bv2import.h
+	<windows.h>
+
+1231170206 /srv/eshabe/Development/PRG/BV21/svn/beevee/BV2/bv2option.h
+	<windows.h>
+
+1231170205 /srv/eshabe/Development/PRG/BV21/svn/beevee/BV2/bv2connect.h
+	<windows.h>
+
+1231170206 /srv/eshabe/Development/PRG/BV21/svn/beevee/BV2/bv2recents.h
+	<windows.h>
+
+1231170206 /srv/eshabe/Development/PRG/BV21/svn/beevee/BV2/bv2placement.h
+	<windows.h>
+	"../bv2data/placefile.h"
+
+1231170208 /srv/eshabe/Development/PRG/BV21/svn/beevee/bv2data/placefile.h
+	"sboard.h"
+
+1231170206 /srv/eshabe/Development/PRG/BV21/svn/beevee/BV2/bv2mergedlg.h
+	<windows.h>
+
+1231170205 /srv/eshabe/Development/PRG/BV21/svn/beevee/BV2/bv2explacement.h
+	<windows.h>
+	"../bv2data/export.h"
+
+1231170205 /srv/eshabe/Development/PRG/BV21/svn/beevee/BV2/bv2loadex.h
+	<windows.h>
+
+1219520466 /srv/eshabe/Development/PRG/BV21/svn/beevee/BV2/bv2devicendlg.h
+
+1219520462 /srv/eshabe/Development/PRG/BV21/svn/beevee/slog_c/slog.h
+
+1276352622 source:/srv/eshabe/Development/PRG/BV21/svn/beevee/BV2/BV2.rc
+	"windows.h"
+	"resource.h"
+	"BV2.h"
+	"version.h"
+
+1276352804 /srv/eshabe/Development/PRG/BV21/svn/beevee/BV2/version.h
+
+1231170205 source:/srv/eshabe/Development/PRG/BV21/svn/beevee/BV2/bv2connect.c
+	"bv2winmain.h"
+	"BV2.h"
+	"bv2draw.h"
+	"toolbox.h"
+	"bv2connect.h"
+
+1231170206 /srv/eshabe/Development/PRG/BV21/svn/beevee/BV2/bv2winmain.h
+	<windows.h>
+	<commdlg.h>
+	<commctrl.h>
+	<windowsx.h>
+	"resource.h"
+	<stdlib.h>
+	<string.h>
+	"../sdata_c/sdata.h"
+	"../sdata_c/sdatateks.h"
+	"../bv2data/sboard.h"
+
+1231160133 source:/srv/eshabe/Development/PRG/BV21/svn/beevee/BV2/bv2devicendlg.c
+	<windows.h>
+	"resource.h"
+	"../steks_c/stext.h"
+
+1274196966 source:/srv/eshabe/Development/PRG/BV21/svn/beevee/BV2/bv2draw.c
+	"bv2winmain.h"
+	"BV2.h"
+	"bv2toolbar.h"
+	"bv2draw.h"
+	"bv2object.h"
+	"statusbar.h"
+	"bv2find.h"
+	"bv2option.h"
+	"bv2connect.h"
+	<math.h>
+	<stdio.h>
+
+1250589653 source:/srv/eshabe/Development/PRG/BV21/svn/beevee/BV2/bv2editdev.c
+	<windows.h>
+	<windowsx.h>
+	"resource.h"
+	"BV2.h"
+	"bv2draw.h"
+	"../bv2data/sboard.h"
+
+1231170205 source:/srv/eshabe/Development/PRG/BV21/svn/beevee/BV2/bv2explacement.c
+	"BV2.h"
+	"resource.h"
+	"bv2explacement.h"
+
+1231170205 source:/srv/eshabe/Development/PRG/BV21/svn/beevee/BV2/bv2find.c
+	"bv2find.h"
+	"BV2.h"
+	"bv2draw.h"
+	"toolbox.h"
+	"statusbar.h"
+	"bv2object.h"
+	"../sdata_c/sdatateks.h"
+
+1231170205 source:/srv/eshabe/Development/PRG/BV21/svn/beevee/BV2/bv2findex.c
+	"BV2.h"
+
+1231170205 source:/srv/eshabe/Development/PRG/BV21/svn/beevee/BV2/bv2import.c
+	"bv2import.h"
+	"resource.h"
+	"toolbox.h"
+
+1231170205 source:/srv/eshabe/Development/PRG/BV21/svn/beevee/BV2/bv2loadex.c
+	<windows.h>
+	"resource.h"
+
+1231170205 source:/srv/eshabe/Development/PRG/BV21/svn/beevee/BV2/bv2merge.c
+	"../bv2data/sboard.h"
+
+1231170205 source:/srv/eshabe/Development/PRG/BV21/svn/beevee/BV2/bv2mergedlg.c
+	"bv2import.h"
+	"resource.h"
+	"toolbox.h"
+	"bv2mergedlg.h"
+
+1231170206 source:/srv/eshabe/Development/PRG/BV21/svn/beevee/BV2/bv2object.c
+	"BV2.h"
+	"bv2object.h"
+	"statusbar.h"
+	"bv2draw.h"
+	"bv2find.h"
+	"resource.h"
+
+1231160134 source:/srv/eshabe/Development/PRG/BV21/svn/beevee/BV2/bv2offsetdlg.c
+	<windows.h>
+	"resource.h"
+	"../steks_c/stext.h"
+
+1231170206 source:/srv/eshabe/Development/PRG/BV21/svn/beevee/BV2/bv2option.c
+	"bv2option.h"
+	"resource.h"
+	"../bv2data/sboard.h"
+
+1231170206 source:/srv/eshabe/Development/PRG/BV21/svn/beevee/BV2/bv2placement.c
+	"resource.h"
+	"bv2placement.h"
+	"../steks_c/stext.h"
+
+1231170206 source:/srv/eshabe/Development/PRG/BV21/svn/beevee/BV2/bv2properties.c
+	"resource.h"
+	"../bv2data/sboard.h"
+	"BV2.h"
+
+1274197047 source:/srv/eshabe/Development/PRG/BV21/svn/beevee/BV2/bv2recents.c
+	"bv2recents.h"
+	"../sdata_c/sdata.h"
+	"toolbox.h"
+	"resource.h"
+	<stdio.h>
+
+1231170206 source:/srv/eshabe/Development/PRG/BV21/svn/beevee/BV2/bv2toolbar.c
+	"bv2toolbar.h"
+	"resource.h"
+	<commctrl.h>
+
+1231170206 source:/srv/eshabe/Development/PRG/BV21/svn/beevee/BV2/bv2unit.c
+	<windows.h>
+	"resource.h"
+
+1231170206 source:/srv/eshabe/Development/PRG/BV21/svn/beevee/BV2/licence.c
+	"BV2.h"
+
+1231170206 source:/srv/eshabe/Development/PRG/BV21/svn/beevee/BV2/signalndlg.c
+	<windows.h>
+	"resource.h"
+	"../steks_c/stext.h"
+
+1231170206 source:/srv/eshabe/Development/PRG/BV21/svn/beevee/BV2/statusbar.c
+	<windows.h>
+	<commctrl.h>
+	"statusbar.h"
+	"resource.h"
+
+1231170206 source:/srv/eshabe/Development/PRG/BV21/svn/beevee/BV2/toolbox.c
+	<windows.h>
+
+1274200769 source:/srv/eshabe/Development/PRG/BV21/svn/beevee/bv2data/ag3070file.c
+	"ag3070file.h"
+	<stdio.h>
+	<string.h>
+	"../steks_c/stext.h"
+	"../sdata_c/sdatateks.h"
+
+1231170207 source:/srv/eshabe/Development/PRG/BV21/svn/beevee/bv2data/agsj50file.c
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+	"agsj50file.h"
+	"../sdata_c/sdatateks.h"
+
+1231170207 source:/srv/eshabe/Development/PRG/BV21/svn/beevee/bv2data/beeveefile.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"beeveefile.h"
+	"../sdata_c/sdatateks.h"
+
+1274197043 source:/srv/eshabe/Development/PRG/BV21/svn/beevee/bv2data/bomattr.c
+	<stdio.h>
+	<stdlib.h>
+	<memory.h>
+	<string.h>
+	<math.h>
+	"bomattr.h"
+	"../sdata_c/sdatateks.h"
+
+1231170207 /srv/eshabe/Development/PRG/BV21/svn/beevee/bv2data/bomattr.h
+	"sboard.h"
+
+1274197077 source:/srv/eshabe/Development/PRG/BV21/svn/beevee/bv2data/cmpdevs.c
+	"cmpdevs.h"
+	"../sdata_c/sdatateks.h"
+	<string.h>
+	<stdlib.h>
+
+1231170207 source:/srv/eshabe/Development/PRG/BV21/svn/beevee/bv2data/export.c
+	"../BV2/bv2explacement.h"
+	"export.h"
+	"unitconv.h"
+
+1231170208 /srv/eshabe/Development/PRG/BV21/svn/beevee/bv2data/unitconv.h
+	"sboard.h"
+
+1250590816 source:/srv/eshabe/Development/PRG/BV21/svn/beevee/bv2data/fabfile.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<math.h>
+	"sboard.h"
+	"../sdata_c/sdatateks.h"
+
+1276351506 source:/srv/eshabe/Development/PRG/BV21/svn/beevee/bv2data/gencadfile.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<math.h>
+	"gencadfile.h"
+	"../sdata_c/sdatateks.h"
+
+1231170204 source:/srv/eshabe/Development/PRG/BV21/svn/beevee/bv2data/generalxy.c
+	<windows.h>
+	<stdio.h>
+	<stdlib.h>
+	"generalxy.h"
+	"../sdata_c/sdatateks.h"
+
+1231170207 source:/srv/eshabe/Development/PRG/BV21/svn/beevee/bv2data/genrad228xfile.c
+	<stdio.h>
+	<string.h>
+	"genrad228xfile.h"
+	"../sdata_c/sdatateks.h"
+
+1219520462 source:/srv/eshabe/Development/PRG/BV21/svn/beevee/bv2data/movebrd.c
+	"sboard.h"
+	<windows.h>
+
+1231170207 source:/srv/eshabe/Development/PRG/BV21/svn/beevee/bv2data/placefile.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"placefile.h"
+	"../sdata_c/sdatateks.h"
+	"unitconv.h"
+
+1231170208 source:/srv/eshabe/Development/PRG/BV21/svn/beevee/bv2data/ppcbfile.c
+	<stdio.h>
+	<string.h>
+	"sboard.h"
+	"../sdata_c/sdatateks.h"
+	"unitconv.h"
+	"ppcbfile.h"
+
+1276350393 source:/srv/eshabe/Development/PRG/BV21/svn/beevee/bv2data/sboard.c
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+	"sboard.h"
+
+1231170208 source:/srv/eshabe/Development/PRG/BV21/svn/beevee/bv2data/unicampcb.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<math.h>
+	"sboard.h"
+	"../sdata_c/sdatateks.h"
+
+1231170208 source:/srv/eshabe/Development/PRG/BV21/svn/beevee/sdata_c/sdata.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"sdata.h"
+
+1231170208 source:/srv/eshabe/Development/PRG/BV21/svn/beevee/sdata_c/sdatateks.c
+	<string.h>
+	<stdlib.h>
+	"sdatateks.h"
+	"../steks_c/stext.h"
+
+1219520462 source:/srv/eshabe/Development/PRG/BV21/svn/beevee/slog_c/slog.c
+	<stdio.h>
+	<time.h>
+	<string.h>
+	"slog.h"
+
+1231170208 source:/srv/eshabe/Development/PRG/BV21/svn/beevee/steks_c/stext.c
+	<string.h>
+	<stdlib.h>
+

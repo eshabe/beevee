@@ -1,0 +1,735 @@
+/*
+    Copyright (C) 2004-2009  Sihabul Milah
+
+    This program is free software; you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation; either version 2 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program; if not, write to the Free Software
+    Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+
+    Sihabul Milah
+    http://eshabe.wordpress.com http://eshabe.blogspot.com
+    eshabe@gmail.com
+    Perumahan Bina Ummah B-15
+    Kibing - Batu Aji
+    Kota Batam - 29432
+    INDONESIA
+*/
+
+#include "windows.h"
+#include "resource.h"
+#include "BV2.h"
+#include "version.h"
+
+IDI_BV2                 ICON    DISCARDABLE     "BV2.ico"
+IDI_SMALL               ICON    DISCARDABLE     "small.ico"
+IDI_BV2DOC              ICON    DISCARDABLE     "bv2doc.ico"
+
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDC_BV2 MENU DISCARDABLE
+BEGIN
+POPUP "&File"
+BEGIN
+MENUITEM "&New Window\tCtrl+Shift+N",   ID_FILE_NEW
+MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+MENUITEM "Open recen&t...",             ID_FILE_OPENRECENT
+MENUITEM "&Close\tCtrl+W",              ID_FILE_CLOSE
+MENUITEM SEPARATOR
+MENUITEM "&Import...",                  ID_FILE_IMPORT
+MENUITEM "Export &Placement...",        ID_FILE_EXPLACEMENT
+MENUITEM "&Merge...",                   ID_FILE_MERGE
+POPUP "Compare &Devices"
+BEGIN
+MENUITEM "&Placement...",               ID_FILE_COMPAREDEVICESPLACE
+MENUITEM "&Layout...",                  ID_FILE_COMPAREDEVICES
+MENUITEM "&Info...",                    ID_FILE_COMPAREDEVICESINFO
+END
+MENUITEM SEPARATOR
+MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVE
+MENUITEM "Save &As...",                 ID_FILE_SAVE_AS
+MENUITEM SEPARATOR
+MENUITEM "P&roperties...\tF10",         ID_FILE_PROPERTIES
+MENUITEM SEPARATOR
+MENUITEM "E&xit",                       IDM_EXIT
+END
+POPUP "&View"
+BEGIN
+MENUITEM "Rotate &Left",                 ID_VIEW_ROTATE90CCW
+MENUITEM "Rotate &Right",                ID_VIEW_ROTATE90CW
+MENUITEM "Flip &Horizontal",             ID_VIEW_FLIPHORIZONTAL
+MENUITEM "Flip &Vertical",               ID_VIEW_FLIPVERTICAL
+MENUITEM SEPARATOR
+MENUITEM "Zoom &In\tF2",                 ID_VIEW_ZOOMIN
+MENUITEM "Zoom &Out\tShift+F2",          ID_VIEW_ZOOMOUT
+MENUITEM "Zoom To &Fit\tF1",                 ID_VIEW_ZOOMTOFIT
+MENUITEM "Zoom To &Selected Device\tShift+F1",     ID_VIEW_ZOOMTOSELECTION
+MENUITEM "&Actual Size\tShift+Ctrl+F1",                 ID_VIEW_ACTUALSIZE
+MENUITEM SEPARATOR
+MENUITEM "&Top Devices",                 ID_VIEW_TOPDEVICES
+MENUITEM "&Bottom Devices",              ID_VIEW_BOTTOMDEVICES
+MENUITEM "To&p Testpins",                ID_VIEW_TOPTESTPINS
+MENUITEM "Botto&m Testpins",             ID_VIEW_BOTTOMTESTPINS
+MENUITEM "Show Devices+Testpins\tF6",    ID_VIEW_DEVICESTESTPINS
+MENUITEM "Show Devices only\tF7",        ID_VIEW_DEVICES
+MENUITEM "Show Testpins only\tF8",       ID_VIEW_TESTPINS
+MENUITEM SEPARATOR
+MENUITEM "Top Traces",                 ID_VIEW_TRACESTOP
+MENUITEM "Bottom Traces",              ID_VIEW_TRACESBOT
+MENUITEM "Inner Traces",               ID_VIEW_TRACESIN
+MENUITEM SEPARATOR
+MENUITEM "Tra&ce(s)\tShift+F6",                ID_VIEW_TRACES
+MENUITEM "Co&nnection Guide",             ID_VIEW_CONNGUIDE
+MENUITEM "&Reset",                        ID_VIEW_RESET
+END
+POPUP "Fi&nd"
+BEGIN
+MENUITEM "&Device...\tCtrl+D",           ID_FIND_DEVICE
+MENUITEM "Si&gnal...\tCtrl+G",           ID_FIND_SIGNAL
+MENUITEM "&Node...\tCtrl+N",             ID_FIND_NODE
+MENUITEM "Nai&l...\tCtrl+L",             ID_FIND_NAIL
+MENUITEM "&Probe...\tCtrl+P",            ID_FIND_PROBE
+MENUITEM "Connec&tion / Signal of...\tCtrl+T", ID_FIND_CONNECTION
+MENUITEM SEPARATOR
+MENUITEM "&Find...\tF4",                 ID_DOFIND
+END
+POPUP "&Tools"
+BEGIN
+MENUITEM "&Lock the trace",              ID_TOOL_LOCK
+MENUITEM "Lock-&add the trace",          ID_TOOL_LOCKADD
+MENUITEM "&Clear the locked trace",      ID_TOOL_CLEAR
+MENUITEM SEPARATOR
+POPUP "&Move pointer to testpin"
+BEGIN
+MENUITEM "&First\tHome",              ID_TOOLS_MOVEPT2TP0
+MENUITEM "&Next\tPgDown",              ID_TOOLS_MOVEPT2NEXT
+MENUITEM "&Previous\tPgUp",              ID_TOOLS_MOVEPT2PREV
+MENUITEM "&Last\tEnd",              ID_TOOLS_MOVEPT2TP9
+END
+MENUITEM SEPARATOR
+#if BV2_MYVERSION_NUMBER >= 0x2110
+MENUITEM "Offset...",                         ID_TOOLS_OFFSET
+MENUITEM "Moved by external reference..",     ID_TOOLS_BOARDMOVE_EXTREF
+MENUITEM "Board origin: Lower-left",          ID_TOOLS_BOARDORIGIN_LL
+#endif
+MENUITEM "&Edit...\tCtrl+E",             ID_TOOLS_EDIT
+MENUITEM SEPARATOR
+MENUITEM "Co&nnection...\tF3",               ID_TOOLS_CONNECTION
+MENUITEM "Object &Info...\tF5",              ID_TOOL_OBJECTINFO
+MENUITEM "&Options...\tF9",                  ID_TOOLS_OPTIONS
+END
+POPUP "&Help"
+BEGIN
+MENUITEM "&About ...",                  IDM_ABOUT
+MENUITEM "&License...",                    IDM_COPYING
+MENUITEM "&Credits...",                     IDM_CREDITS
+MENUITEM "&ReadMe",                     IDM_README
+END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDC_BV2 ACCELERATORS MOVEABLE PURE
+BEGIN
+"/",            IDM_ABOUT,              ASCII,  ALT, NOINVERT
+"?",            IDM_ABOUT,              ASCII,  ALT, NOINVERT
+"N",            ID_FILE_NEW,           VIRTKEY, CONTROL, SHIFT, NOINVERT
+"O",            ID_FILE_OPEN,           VIRTKEY, CONTROL, NOINVERT
+"W",            ID_FILE_CLOSE,          VIRTKEY, CONTROL, NOINVERT
+"S",            ID_FILE_SAVE,           VIRTKEY, CONTROL, NOINVERT
+"D",            ID_FIND_DEVICE,         VIRTKEY, CONTROL, NOINVERT
+"G",            ID_FIND_SIGNAL,         VIRTKEY, CONTROL, NOINVERT
+"N",            ID_FIND_NODE,           VIRTKEY, CONTROL, NOINVERT
+"L",            ID_FIND_NAIL,           VIRTKEY, CONTROL, NOINVERT
+"P",            ID_FIND_PROBE,          VIRTKEY, CONTROL, NOINVERT
+"E",            ID_TOOLS_EDIT,          VIRTKEY, CONTROL, NOINVERT
+"T",            ID_FIND_CONNECTION,     VIRTKEY, CONTROL, NOINVERT
+VK_END,         ID_TOOLS_MOVEPT2TP9,     VIRTKEY, NOINVERT
+VK_HOME,        ID_TOOLS_MOVEPT2TP0,     VIRTKEY, NOINVERT
+VK_PRIOR,       ID_TOOLS_MOVEPT2PREV,     VIRTKEY, NOINVERT
+VK_NEXT,        ID_TOOLS_MOVEPT2NEXT,     VIRTKEY, NOINVERT
+VK_F1,          ID_VIEW_ZOOMTOFIT,          VIRTKEY, NOINVERT
+VK_F1,          ID_VIEW_ZOOMTOSELECTION,    VIRTKEY, SHIFT, NOINVERT
+VK_F1,          ID_VIEW_ACTUALSIZE,         VIRTKEY, SHIFT, CONTROL, NOINVERT
+VK_F2,          ID_VIEW_ZOOMIN,         VIRTKEY, NOINVERT
+VK_F2,          ID_VIEW_ZOOMOUT,        VIRTKEY, SHIFT, NOINVERT
+VK_F3,          ID_TOOLS_CONNECTION,    VIRTKEY, NOINVERT
+VK_F4,          ID_DOFIND,              VIRTKEY, NOINVERT
+VK_F5,          ID_TOOL_OBJECTINFO,     VIRTKEY, NOINVERT
+VK_F6,          ID_VIEW_DEVICESTESTPINS,        VIRTKEY, NOINVERT
+VK_F6,          ID_VIEW_TRACES,        VIRTKEY, SHIFT, NOINVERT
+VK_F7,          ID_VIEW_DEVICES,        VIRTKEY, NOINVERT
+VK_F8,          ID_VIEW_TESTPINS,       VIRTKEY, NOINVERT
+VK_F9,          ID_TOOLS_OPTIONS,       VIRTKEY, NOINVERT
+VK_F10,         ID_FILE_PROPERTIES,     VIRTKEY, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 183, 276
+STYLE DS_SYSMODAL | DS_MODALFRAME | DS_CENTER | WS_CAPTION | WS_VISIBLE | WS_SYSMENU
+CAPTION "BeeVee"
+FONT 8, "Verdana"
+BEGIN
+CTEXT           BV2_MYTITLE,IDC_STATIC,2,126,178,8,SS_NOPREFIX
+CTEXT           "Copyright (C) 2004-2009 Sihabul Milah",IDC_STATIC,2,136,178,8,SS_NOPREFIX
+CTEXT           "BeeVee comes with ABSOLUTELY NO WARRANTY!\nThis is FREE software, and you are welcome to redistribute it under certain conditions.\nGo to Help>License menu for details.",IDC_STATIC,3,160,176,32
+CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,1,158,180,38
+CTEXT           "BeeVee is a board (PCBA) viewer application to locate device, signal, nail, node, probe or trace depend to source of the data.",IDC_STATIC,2,198,178,28
+CTEXT           "Writen by Sihabul Milah",IDC_STATIC,5,228,173,8
+CONTROL         IDB_BEEVEE2,IDB_BEEVEE2,"Static",SS_BITMAP,0,0,203,123
+CTEXT           "Thank you was using this application.\nYour feedback is welcome! eshabe@gmail.com",IDC_THANK,5,242,175,16
+LTEXT           BV2_MYVERSION,IDC_STATIC,2,262,60,8
+DEFPUSHBUTTON   "Close",IDOK,73,262,35,12
+END
+
+
+IDD_IMPORT DIALOG DISCARDABLE  0, 0, 186, 162
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Import"
+FONT 8, "MS Sans Serif"
+BEGIN
+LISTBOX         IDC_LISTTYPE,5,15,175,123,LBS_SORT |
+LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+DEFPUSHBUTTON   "Select",IDOK,76,145,50,14
+PUSHBUTTON      "Cancel",IDCANCEL,131,145,50,14
+LTEXT           "Available sources:",IDC_STATIC,5,3,170,10
+END
+
+IDD_OBJECTDLG DIALOGEX 0, 0, 106, 103
+STYLE WS_POPUP | WS_CAPTION |  WS_SYSMENU  | WS_VISIBLE | WS_SIZEBOX
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "Object Info"
+FONT 8, "MS Sans Serif"
+BEGIN
+LTEXT           "Kind",IDC_KIND,1,5,74,10
+EDITTEXT        IDC_NAME,1,14,103,12,ES_AUTOHSCROLL | ES_READONLY | NOT
+WS_BORDER | NOT WS_TABSTOP | ES_AUTOHSCROLL
+EDITTEXT        IDC_LOC,1,25,52,12,ES_AUTOHSCROLL | ES_READONLY | NOT
+WS_BORDER | NOT WS_TABSTOP
+EDITTEXT        IDC_INFO,1,37,103,64,ES_MULTILINE | ES_READONLY | NOT
+WS_BORDER | NOT WS_TABSTOP | ES_AUTOVSCROLL
+END
+
+IDD_OBJECTBAR DIALOG DISCARDABLE  0, 0, 345, 15
+STYLE WS_CHILD | NOT DS_SETFOREGROUND | WS_VISIBLE
+//EXSTYLE WS_EX_TOOLWINDOW
+FONT 8, "Verdana"
+BEGIN
+LTEXT           "None",IDC_KIND,17,2,38,8
+/*
+LTEXT        "",IDC_NAME,65,2,80,8
+LTEXT        "",IDC_LOC,147,2,40,8
+LTEXT        "",IDC_INFO,189,2,200,8
+*/
+EDITTEXT        IDC_NAME,65,1,80,10,ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER | NOT WS_TABSTOP
+EDITTEXT        IDC_LOC,147,1,40,10,ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER | NOT WS_TABSTOP
+EDITTEXT        IDC_INFO,189,1,200,10,ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER | NOT WS_TABSTOP
+CONTROL         "",IDCANCEL,"Button",BS_AUTORADIOBUTTON,0,2,8,10
+CONTROL         "",IDC_STATIC,"Static",SS_GRAYRECT,10,0,1,16
+END
+
+/*
+IDD_STATUS DIALOGEX 0, 0, 356, 13
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+LTEXT           "Static",IDC_STATUS,1,1,315,10,SS_CENTERIMAGE,
+WS_EX_STATICEDGE
+END
+*/
+
+IDD_PROPERTIES DIALOG DISCARDABLE  0, 0, 186, 232
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Properties"
+FONT 8, "MS Sans Serif"
+BEGIN
+EDITTEXT        IDC_NAME,6,12,173,13,ES_AUTOHSCROLL
+PUSHBUTTON      "Cancel",IDCANCEL,126,196,50,14
+DEFPUSHBUTTON   "Save",IDOK,126,214,50,14
+LTEXT           "Name:",IDC_STATIC,6,2,55,10
+LTEXT           "Version:",IDC_STATIC,6,28,55,10
+LTEXT           "Original Form:",IDC_STATIC,6,58,55,10
+EDITTEXT        IDC_VERSION,6,40,173,12,ES_AUTOHSCROLL | ES_READONLY |
+NOT WS_TABSTOP
+EDITTEXT        IDC_ORIGIN,6,70,173,12,ES_AUTOHSCROLL | ES_READONLY |
+NOT WS_TABSTOP
+EDITTEXT        IDC_COMP,80,92,45,12,ES_AUTOHSCROLL | ES_READONLY | NOT
+WS_TABSTOP
+EDITTEXT        IDC_NODE,80,109,45,12,ES_AUTOHSCROLL | ES_READONLY | NOT
+WS_TABSTOP
+EDITTEXT        IDC_CONN,80,126,45,12,ES_AUTOHSCROLL | ES_READONLY | NOT
+WS_TABSTOP
+EDITTEXT        IDC_NET,80,143,45,12,ES_AUTOHSCROLL | ES_READONLY | NOT
+WS_TABSTOP
+EDITTEXT        IDC_TRACE,80,160,45,12,ES_AUTOHSCROLL | ES_READONLY |
+NOT WS_TABSTOP
+EDITTEXT        IDC_XY,80,177,100,12,ES_AUTOHSCROLL | ES_READONLY |
+NOT WS_TABSTOP
+RTEXT           "Component:",IDC_STATIC,6,95,70,8
+RTEXT           "Node/Signal:",IDC_STATIC,6,112,70,8
+RTEXT           "Connection:",IDC_STATIC,6,129,70,8
+RTEXT           "Net/Testpin:",IDC_STATIC,6,146,70,8
+RTEXT           "Trace:",IDC_STATIC,6,163,70,8
+RTEXT           "Lower,left-upper,right:",IDC_STATIC,6,180,70,8
+END
+
+IDD_FINDBAR DIALOG DISCARDABLE  0, 0, 273, 15
+STYLE WS_CHILD | WS_VISIBLE
+FONT 8, "Verdana"
+BEGIN
+EDITTEXT        IDC_NAME,64,1,86,12,ES_UPPERCASE | ES_AUTOHSCROLL
+COMBOBOX        IDC_OBJECT,17,1,45,36,CBS_DROPDOWNLIST | WS_VSCROLL
+//DEFPUSHBUTTON   "Find",IDOK,154,1,40,12
+CONTROL         "",IDCANCEL,"Button",BS_AUTORADIOBUTTON,0,4,8,8
+CONTROL         "",IDC_STATIC,"Static",SS_GRAYRECT,10,0,1,16
+//PUSHBUTTON      "&Cancel",IDCANCEL,154,1,50,12
+LTEXT           "@! = close",IDC_STATIC,154,2,60,8
+END
+
+IDD_FIND DIALOG DISCARDABLE  0, 0, 161, 125
+STYLE DS_MODALFRAME | DS_SETFOREGROUND | DS_CENTER | WS_POPUP | WS_CAPTION  | WS_VISIBLE
+CAPTION "Find Object"
+FONT 8, "MS Sans Serif"
+BEGIN
+EDITTEXT        IDC_NAME,63,1,97,12,ES_UPPERCASE | ES_AUTOHSCROLL
+COMBOBOX        IDC_OBJECT,2,2,58,72,CBS_DROPDOWNLIST | WS_VSCROLL |
+WS_TABSTOP
+LISTBOX         IDC_LISTTEXT,63,16,95,106,LBS_SORT |
+LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+DEFPUSHBUTTON   "Find",IDOK,4,90,50,14
+PUSHBUTTON      "Cancel",IDCANCEL,4,107,50,14
+END
+
+IDD_FINDBOX DIALOG DISCARDABLE  0, 0, 196, 38
+STYLE DS_MODALFRAME | DS_SETFOREGROUND | DS_CENTER | WS_POPUP | WS_CAPTION  | WS_VISIBLE
+CAPTION "Find Connection"
+FONT 8, "MS Sans Serif"
+BEGIN
+EDITTEXT        IDC_NAME,2,2,80,12,ES_UPPERCASE | ES_AUTOHSCROLL
+LTEXT           "Find signal name of pin of device\nExample: U1.A1",IDC_STATIC,2,18,190,20
+DEFPUSHBUTTON   "Find",IDOK,88,1,50,14
+PUSHBUTTON      "Cancel",IDCANCEL,142,1,50,14
+END
+
+IDD_OPTION DIALOG DISCARDABLE  0, 0, 243, 262
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Option"
+FONT 8, "MS Sans Serif"
+BEGIN
+GROUPBOX        "Find",IDC_STATIC,2,2,170,48
+CONTROL         "Zoom",IDC_ZOOM,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,
+15,128,9
+CONTROL         "Blink",IDC_BLINK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+7,25,44,9
+CONTROL         "Line",IDC_LINE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,
+35,118,9
+GROUPBOX        "Colors, click left button to change",IDC_COLOR,2,53,240,150
+PUSHBUTTON      "...",IDC_TDEV,7,65,17,8
+PUSHBUTTON      "...",IDC_BDEV,7,76,17,8
+PUSHBUTTON      "...",IDC_TTP,7,87,17,8
+PUSHBUTTON      "...",IDC_BTP,7,98,17,8
+PUSHBUTTON      "...",IDC_SEL,7,109,17,8
+PUSHBUTTON      "...",IDC_SELB,7,120,17,8
+CONTROL         "Clear",IDC_CLEAR,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+201,120,33,8
+PUSHBUTTON      "...",IDC_BACK,7,130,17,8
+PUSHBUTTON      "...",IDC_TRACE,7,140,17,8
+PUSHBUTTON      "...",IDC_TRACET,7,150,17,8
+PUSHBUTTON      "...",IDC_TRACEB,7,160,17,8
+PUSHBUTTON      "...",IDC_TRACELK,7,170,17,8
+PUSHBUTTON      "...",IDC_VIA,7,180,17,8
+PUSHBUTTON      "...",IDC_CLINE,7,190,17,8
+PUSHBUTTON      "Default",IDC_DEFAULT,186,186,50,14
+DEFPUSHBUTTON   "OK",IDOK,191,2,50,14
+PUSHBUTTON      "Cancel",IDCANCEL,191,19,50,14
+
+CONTROL         "Show Object Info at startup",IDC_OBJECT,"Button",
+BS_AUTOCHECKBOX | WS_TABSTOP,3,210,100,8
+CONTROL         "Enable Object Info Bar",IDC_ENAOBJECT,"Button",
+BS_AUTOCHECKBOX | WS_TABSTOP,3,220,100,8
+CONTROL         "Enable Find Bar",IDC_ENAFIND,"Button",BS_AUTOCHECKBOX |
+WS_TABSTOP,3,230,100,8
+CONTROL         "Find Bar end by space to find",IDC_ENAFBSPACE,"Button",BS_AUTOCHECKBOX |
+WS_TABSTOP,3,240,120,8
+CONTROL         "Show Toolbar's text",IDC_TOOLBARTEXT,"Button",BS_AUTOCHECKBOX |
+WS_TABSTOP,3,250,100,8
+
+LTEXT           "Top device",IDC_STATIC,39,65,166,8
+LTEXT           "Bottom device",IDC_STATIC,39,76,166,8
+LTEXT           "Top testpin",IDC_STATIC,39,87,166,8
+LTEXT           "Bottom testpin",IDC_STATIC,39,98,166,8
+LTEXT           "Selected/highlighted device/testpin",IDC_STATIC,39,109,
+166,8
+//LTEXT           "Selected/highlighted device/testpin background",
+LTEXT           "Found device/testpin background",
+IDC_STATIC,39,120,158,8
+LTEXT           "Background",IDC_STATIC,39,130,60,8
+LTEXT           "Inner Trace",IDC_STATIC,39,140,60,8
+LTEXT           "Top trace",IDC_STATIC,39,150,60,8
+LTEXT           "Bottom trace",IDC_STATIC,39,160,60,8
+LTEXT           "Locked-Trace",IDC_STATIC,39,170,60,8
+LTEXT           "Via",IDC_STATIC,39,180,60,8
+LTEXT           "Line (find's tool)",IDC_STATIC,39,190,60,8
+LTEXT           "",IDC_TDEV_,27,65,8,8,WS_BORDER
+LTEXT           "",IDC_BDEV_,27,76,8,8,WS_BORDER
+LTEXT           "",IDC_TTP_,27,87,8,8,WS_BORDER
+LTEXT           "",IDC_BTP_,27,98,8,8,WS_BORDER
+LTEXT           "",IDC_SEL_,27,109,8,8,WS_BORDER
+LTEXT           "",IDC_SELB_,27,120,8,8,WS_BORDER
+LTEXT           "",IDC_BACK_,27,130,8,8,WS_BORDER
+LTEXT           "",IDC_TRACE_,27,140,8,8,WS_BORDER
+LTEXT           "",IDC_TRACET_,27,150,8,8,WS_BORDER
+LTEXT           "",IDC_TRACEB_,27,160,8,8,WS_BORDER
+LTEXT           "",IDC_TRACELK_,27,170,8,8,WS_BORDER
+LTEXT           "",IDC_VIA_,27,180,8,8,WS_BORDER
+LTEXT           "",IDC_CLINE_,27,190,8,8,WS_BORDER
+
+END
+
+IDD_CONNECTION DIALOGEX 0, 0, 273, 154
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "BeeVee Connection Toolbox"
+FONT 8, "MS Sans Serif"
+BEGIN
+LTEXT           "Signals",IDC_STATIC,2,2,80,8
+LTEXT           "Signal connect to",IDC_STATIC,93,2,80,8
+LTEXT           "Device connect to",IDC_STATIC,184,2,80,8
+LISTBOX         IDC_SIGNAL,2,12,87,122,LBS_SORT | LBS_NOINTEGRALHEIGHT |
+WS_VSCROLL | WS_HSCROLL | WS_TABSTOP
+LISTBOX         IDC_DEVICE,93,12,87,122,LBS_SORT | LBS_NOINTEGRALHEIGHT |
+WS_VSCROLL | WS_HSCROLL | WS_TABSTOP
+LISTBOX         IDC_DEVCONNECT,184,12,87,122,LBS_SORT | LBS_NOINTEGRALHEIGHT |
+WS_VSCROLL | WS_HSCROLL | WS_TABSTOP
+DEFPUSHBUTTON   "Connection",IDOK,204,136,50,14
+LTEXT           "Device:",IDC_STATIC,2,138,40,8,NOT WS_GROUP
+LTEXT           "",IDC_UPDATE,42,138,160,8,NOT WS_GROUP
+END
+
+
+IDD_IMPORTPLACEMENT DIALOG DISCARDABLE  0, 0, 161, 150
+STYLE DS_MODALFRAME | DS_SETFOREGROUND | DS_CENTER | WS_POPUP | WS_CAPTION
+CAPTION "Import Placement File"
+FONT 8, "MS Sans Serif"
+BEGIN
+GROUPBOX        "Base:",IDC_STATIC,78,4,54,30,WS_GROUP
+AUTORADIOBUTTON     "Co&lumn",IDC_RBCOLUMN,80,14,50,8
+AUTORADIOBUTTON     "C&haracter",IDC_RBCHAR,80,24,50,8
+GROUPBOX        "Delimiter:",IDC_STATIC,78,40,70,43, WS_GROUP
+AUTORADIOBUTTON    "S&pace", IDC_BTSPACE, 80,50,40,8
+AUTORADIOBUTTON    "Ta&b", IDC_BTTAB, 80,60,40,8
+AUTORADIOBUTTON    "Othe&r:", IDC_BTOTHERCHAR, 80,70,40,8, ES_UPPERCASE
+EDITTEXT        IDC_EDOTHERCHAR,122,68,24,12, ES_AUTOHSCROLL | ES_UPPERCASE
+EDITTEXT        IDC_TOKENSTRING,80,86,24,12, ES_AUTOHSCROLL | ES_UPPERCASE
+EDITTEXT        IDC_BTMMARK,80,100,24,12, ES_AUTOHSCROLL | ES_UPPERCASE
+EDITTEXT        IDC_STARTLINE,80,114,24,12, ES_AUTOHSCROLL | ES_NUMBER
+EDITTEXT        IDC_REFDES,2,2,24,12, ES_AUTOHSCROLL
+EDITTEXT        IDC_POSX,2,16,24,12, ES_AUTOHSCROLL
+EDITTEXT        IDC_POSY,2,30,24,12, ES_AUTOHSCROLL
+EDITTEXT        IDC_ORIENT,2,44,24,12, ES_AUTOHSCROLL
+EDITTEXT        IDC_POSZ,2,58,24,12, ES_AUTOHSCROLL
+EDITTEXT        IDC_PN,2,72,24,12, ES_AUTOHSCROLL
+EDITTEXT        IDC_SHAPE,2,86,24,12, ES_AUTOHSCROLL
+DEFPUSHBUTTON   "&OK",IDOK,2,132,40,14
+PUSHBUTTON      "&Cancel",IDCANCEL,44,132,40,14
+PUSHBUTTON      "&How",IDC_HOW,86,132,40,14
+LTEXT        "Ref.Des.",IDC_STATIC,28,4,50,8
+LTEXT        "Pos X",IDC_STATIC,28,20,50,8
+LTEXT        "Pos Y",IDC_STATIC,28,32,50,8
+LTEXT        "Orientation",IDC_STATIC,28,46,50,8
+LTEXT        "Top/Bot",IDC_STATIC,28,60,50,8
+LTEXT        "Part Number",IDC_STATIC,28,74,50,8
+LTEXT        "Shape",IDC_STATIC,28,88,50,8
+LTEXT        ": Token",IDC_STATIC,106,88,50,8
+LTEXT        ": Bottom mark",IDC_STATIC,106,102,50,8
+LTEXT        ": Start line",IDC_STATIC,106,116,50,8
+END
+
+IDD_RECENTS DIALOG DISCARDABLE  0, 0, 280, 120
+STYLE DS_MODALFRAME | DS_SETFOREGROUND | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SIZEBOX | WS_SYSMENU
+CAPTION "Open Recent Files"
+FONT 8, "MS Sans Serif"
+BEGIN
+LISTBOX         IDC_LISTTEXT,2,2,276,100, LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+DEFPUSHBUTTON   "&Open",IDOK,2,104,50,14
+PUSHBUTTON      "&Cancel",IDCANCEL,54,104,50,14
+PUSHBUTTON      "Clea&r",IDC_CLEAR,106,104,50,14
+CONTROL "New Window",IDC_NEWWINDOW,"Button",BS_AUTOCHECKBOX | WS_TABSTOP, 160,108,100,8
+END
+
+IDD_HOWIMPORTPLACEMENT DIALOG DISCARDABLE  0, 0, 230, 138
+STYLE DS_MODALFRAME | DS_SETFOREGROUND | DS_CENTER | WS_CAPTION |  WS_POPUP
+CAPTION "How to fill this form?"
+FONT 8, "Verdana"
+BEGIN
+LTEXT           "1. How to read your data? By column or by character postion?\n---> Select in Base group.",IDC_STATIC,2,2,226,16
+LTEXT           "2. If by column, what is the delimiter?\n---> Set in Delimiter group.",IDC_STATIC,2,22,226,16
+LTEXT           "3. Additonally, set token string or comment sign in Token.",IDC_STATIC,2,42,226,8
+LTEXT           "4. How to set Ref.Des. field (and friend)?\n-->Set it with column number (1,2,3,..) if Base is set to Column otherwise set with character range (1-3,4-10,etc.) if Base is set to Character.\nLet the field in BLANK, ZERO (0) or periode (-) to ignore.",IDC_STATIC,2,54,226,40
+LTEXT           "5. Click OK to proceed.",IDC_STATIC,2,104,226,8
+DEFPUSHBUTTON   "Close",IDCANCEL,95,120,40,14
+END
+
+IDD_UNIT DIALOG DISCARDABLE  0, 0, 80, 80
+STYLE DS_MODALFRAME | DS_SETFOREGROUND | DS_CENTER | WS_CAPTION |  WS_POPUP
+CAPTION "What is used UNIT?"
+FONT 8, "Verdana"
+BEGIN
+GROUPBOX            "Unit:",IDC_STATIC,6,4,48,50
+AUTORADIOBUTTON     "mils",IDC_RBUNITMILS,8,14,40,8,WS_TABSTOP
+AUTORADIOBUTTON     "inch",IDC_RBUNITINCH,8,24,40,8,WS_TABSTOP
+AUTORADIOBUTTON     "micron",IDC_RBUNITMICRON,8,34,40,8,WS_TABSTOP
+AUTORADIOBUTTON     "mm",IDC_RBUNITMM,8,44,40,8,WS_TABSTOP
+DEFPUSHBUTTON       "OK",IDOK,20,62,40,14
+END
+
+IDD_SIGNANAME DIALOG DISCARDABLE  0, 0, 126, 48
+STYLE DS_MODALFRAME | DS_SETFOREGROUND | DS_CENTER | WS_CAPTION |  WS_POPUP | WS_VISIBLE
+CAPTION "What is the reference point?"
+FONT 8, "Verdana"
+BEGIN
+EDITTEXT IDC_SIGNAL,2,4,80,12, ES_AUTOHSCROLL | ES_UPPERCASE
+DEFPUSHBUTTON       "OK",IDOK,84,3,40,14
+CTEXT "The reference point should be a signal name that has ONLY one testpin at both data.",IDC_STATIC, 2,20, 100,24
+END
+
+IDD_MERGE DIALOG DISCARDABLE  0, 0, 90, 98
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_VISIBLE
+CAPTION "Merge"
+FONT 8, "MS Sans Serif"
+BEGIN
+LISTBOX         IDC_LISTTYPE,5,15,80,60,LBS_SORT |
+LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+DEFPUSHBUTTON   "Select",IDOK,4,80,40,14
+PUSHBUTTON      "Cancel",IDCANCEL,46,80,40,14
+LTEXT           "Available type(s):",IDC_STATIC,5,3,170,10
+END
+
+IDD_EXPLACEMENT DIALOG DISCARDABLE  0, 0, 208, 128
+STYLE DS_MODALFRAME | DS_SETFOREGROUND | DS_CENTER | WS_CAPTION |  WS_POPUP
+CAPTION "Export to Placement"
+FONT 8, "Verdana"
+BEGIN
+CONTROL "Orientation",IDC_ORIENT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP, 2,4,100,8
+CONTROL "Top/Bottom",IDC_POSZ,"Button",BS_AUTOCHECKBOX | WS_TABSTOP, 2,14,100,8
+CONTROL "PartNumber",IDC_PN,"Button",BS_AUTOCHECKBOX | WS_TABSTOP, 2,24,100,8
+CONTROL "Shape",IDC_SHAPE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP, 2,34,100,8
+CONTROL "Use XY info instead of center of rectangle",IDC_INFO,"Button",BS_AUTOCHECKBOX | WS_TABSTOP, 2,44,200,8
+AUTORADIOBUTTON     "Top",IDC_XTOP,2,58,200,8,WS_TABSTOP
+AUTORADIOBUTTON     "Bottom",IDC_XBOTTOM,2,68,200,8,WS_TABSTOP
+AUTORADIOBUTTON     "Both",IDC_XBOTH,2,78,200,8,WS_TABSTOP
+CONTROL "Refdes only!",IDC_XREFDESONLY,"Button",BS_AUTOCHECKBOX | WS_TABSTOP, 2,92,200,8
+DEFPUSHBUTTON   "OK",IDOK,4,108,44,14
+PUSHBUTTON      "Cancel",IDCANCEL,52,108,40,14
+END
+
+IDD_EDITDEV DIALOG DISCARDABLE  0, 0, 199, 143
+STYLE DS_MODALFRAME | WS_OVERLAPPED | WS_CAPTION | WS_VISIBLE | WS_SYSMENU | DS_CENTER
+CAPTION "Edit Device"
+FONT 8, "Verdana"
+BEGIN
+	CONTROL "",              IDC_REFDES, "EDIT", ES_LEFT | ES_AUTOHSCROLL | WS_CHILD | WS_VISIBLE | WS_BORDER | WS_TABSTOP, 49, 4, 148, 12
+	CONTROL "",              IDC_LOC, "COMBOBOX", CBS_DROPDOWNLIST | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 49, 19, 58, 24
+	CONTROL "",              IDC_ORIENT, "EDIT", ES_NUMBER | ES_LEFT | ES_AUTOHSCROLL | WS_CHILD | WS_VISIBLE | WS_BORDER | WS_TABSTOP, 49, 36, 34, 12
+	CONTROL "",              IDC_EDX1, "EDIT", ES_NUMBER | ES_LEFT | ES_AUTOHSCROLL | WS_CHILD | WS_VISIBLE | WS_BORDER | WS_TABSTOP, 49, 51, 34, 12
+	CONTROL "",              IDC_EDY1, "EDIT", ES_NUMBER | ES_LEFT | ES_AUTOHSCROLL | WS_CHILD | WS_VISIBLE | WS_BORDER | WS_TABSTOP, 89, 51, 34, 12
+	CONTROL "",              IDC_EDX2, "EDIT", ES_NUMBER | ES_LEFT | ES_AUTOHSCROLL | WS_CHILD | WS_VISIBLE | WS_BORDER | WS_TABSTOP, 125, 51, 34, 12
+	CONTROL "",              IDC_EDY2, "EDIT", ES_NUMBER | ES_LEFT | ES_AUTOHSCROLL | WS_CHILD | WS_VISIBLE | WS_BORDER | WS_TABSTOP, 163, 51, 34, 12
+	CONTROL "",              IDC_INFO, "EDIT", ES_NUMBER | ES_LEFT | WS_CHILD | WS_VISIBLE | WS_BORDER | WS_TABSTOP | ES_MULTILINE, 49, 68, 149, 52
+	CONTROL "OK",            IDOK, "BUTTON", BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 65, 125, 43, 14
+	CONTROL "Apply",         IDC_APPLY, "BUTTON", BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 109, 125, 43, 14
+	CONTROL "Close",        IDCANCEL, "BUTTON", BS_PUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 153, 125, 43, 14
+	CONTROL "RefDes :",        IDC_STATIC, "STATIC", SS_LEFT | WS_CHILD | WS_VISIBLE, 3, 5, 39, 10
+	CONTROL "Loc. :",        IDC_STATIC, "STATIC", SS_LEFT | WS_CHILD | WS_VISIBLE, 3, 21, 29, 10
+	CONTROL "Orientation :", IDC_STATIC, "STATIC", SS_LEFT | WS_CHILD | WS_VISIBLE, 3, 39, 42, 10
+	CONTROL "x1,y1 x2,y2",        IDC_STATIC, "STATIC", SS_LEFT | WS_CHILD | WS_VISIBLE, 3, 53, 42, 10
+	CONTROL "Info :",        IDC_STATIC, "STATIC", SS_LEFT | WS_CHILD | WS_VISIBLE, 3, 68, 23, 10
+END
+
+
+/*
+IDD_MYBUSYBOX DIALOG DISCARDABLE 0,0, 200,40
+STYLE DS_MODALFRAME | DS_SETFOREGROUND | DS_CENTER | WS_CAPTION |  WS_POPUP
+CAPTION "I'M BUSY"
+FONT 8, "Verdana"
+BEGIN
+CTEXT "Available type(s):",IDC_STATIC,5,3,170,10
+END
+*/
+
+IDD_COPYING DIALOG DISCARDABLE 0,0, 340,322
+STYLE DS_MODALFRAME | DS_SETFOREGROUND | DS_CENTER | WS_CAPTION |  WS_POPUP
+CAPTION "This program is distributed under the GNU General Public License."
+FONT 8, "Verdana"
+BEGIN
+DEFPUSHBUTTON   "Close",IDOK,150,304,40,14
+CONTROL "", IDC_HOW, "EDIT", ES_LEFT |  WS_CHILD | WS_VISIBLE | ES_MULTILINE |  WS_TABSTOP |  WS_VSCROLL | WS_HSCROLL | ES_READONLY , 2, 2, 336, 300
+END
+
+IDD_OFFSET DIALOG DISCARDABLE 0,0, 120,64
+STYLE DS_MODALFRAME | DS_SETFOREGROUND | DS_CENTER | WS_CAPTION |  WS_POPUP | WS_VISIBLE
+CAPTION "Board Offset"
+FONT 8, "Verdana"
+BEGIN
+CONTROL "Move To",IDC_MOVETO,"Button",BS_AUTOCHECKBOX | WS_TABSTOP, 2,2,50,8
+RTEXT "X :", IDC_STATIC, 2,18,40,8
+RTEXT "Y :", IDC_STATIC, 2,32,40,8
+EDITTEXT        IDC_POSX,54,16,24,12, ES_AUTOHSCROLL | ES_NUMBER
+EDITTEXT        IDC_POSY,54,30,24,12, ES_AUTOHSCROLL | ES_NUMBER
+DEFPUSHBUTTON   "OK",IDOK,18,46,40,14
+PUSHBUTTON   "Cancel",IDCANCEL,62,46,40,14
+END
+
+IDD_REFNAME DIALOG DISCARDABLE  0, 0, 126, 48
+STYLE DS_MODALFRAME | DS_SETFOREGROUND | DS_CENTER | WS_CAPTION |  WS_POPUP | WS_VISIBLE
+CAPTION "What is the reference?"
+FONT 8, "Verdana"
+BEGIN
+EDITTEXT IDC_NAME,2,4,80,12, ES_AUTOHSCROLL | ES_UPPERCASE
+DEFPUSHBUTTON       "OK",IDOK,84,3,40,14
+CTEXT "The reference name should be a device name.",IDC_STATIC, 2,20, 100,24
+END
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_TOOLBAR             BITMAP  DISCARDABLE     "toolbar21.bmp"
+IDB_BEEVEE2             BITMAP  DISCARDABLE     "beevee21.bmp"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+FILEVERSION RC_FILEVERSION
+PRODUCTVERSION RC_FILEVERSION
+FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+FILEFLAGS 0x9L
+#else
+FILEFLAGS 0x8L
+#endif
+FILEOS 0x40004L
+FILETYPE 0x1L
+FILESUBTYPE 0x0L
+BEGIN
+BLOCK "StringFileInfo"
+BEGIN
+BLOCK "040904b0"
+BEGIN
+VALUE "Comments", "BeeVee 2.1 : Board viewer like ECAD layout reader\0"
+VALUE "CompanyName", "\0"
+VALUE "FileDescription", "Board Viewer Application - 2.1\0"
+VALUE "FileVersion", RC_FILEVERSION_STRING
+VALUE "InternalName", "BeeVee\0"
+VALUE "LegalCopyright", "Copyright © Sihabul Milah 2004-2010\0"
+VALUE "LegalTrademarks", "\0"
+VALUE "OriginalFilename", "BeeVee.exe\0"
+VALUE "PrivateBuild", "\0"
+VALUE "ProductName", "BeeVee 2.1\0"
+VALUE "ProductVersion", RC_FILEVERSION_STRING
+VALUE "SpecialBuild", "\0"
+END
+END
+BLOCK "VarFileInfo"
+BEGIN
+VALUE "Translation", 0x409, 1200
+END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE
+BEGIN
+IDS_APP_TITLE           BV2_MYTITLE
+IDM_EXIT                "Exit from this application\nExit"
+IDC_BV2                 BV2_WINCLASSNAME
+IDS_TOOLBAR             "Standby"
+IDM_ABOUT               "About this application\nAbout"
+ID_FILE_NEW             "Open new window\nNew Window"
+ID_FILE_OPEN            "Open BeeVee 2 file\nOpen"
+ID_FILE_CLOSE           "Close current board view\nClose"
+ID_FILE_SAVE            "Save current board view\nSave"
+ID_FILE_IMPORT          "Import from available sources...\nImport"
+ID_FILE_MERGE           "Merge GenCAD's traces to current data\nMerge"
+ID_FILE_PROPERTIES      "Display properties...\nProperties"
+ID_FILE_SAVE_AS         "Save current board view as...\nSave as"
+ID_VIEW_ROTATE90CW      "Rotate right board view (CW 90deg)\nRotate CW"
+ID_VIEW_ROTATE90CCW     "Rotate left board view (CCW 90deg)\nRotate CCW"
+ID_VIEW_FLIPHORIZONTAL  "Flip horizontal board view\nFlip Horizontal"
+ID_VIEW_FLIPVERTICAL    "Flip vertical board view\nFlip Vertical"
+ID_VIEW_ZOOMIN          "Increase board view scale\nZoom In"
+ID_VIEW_ZOOMOUT         "Decrease board view scale\nZoom Out"
+ID_TOOL_OBJECTINFO      "Show Object-Info dialog box/bar\nObject Info"
+ID_FIND_PROBE           "Find location of a probe (Pxxxx)\nFind Probe"
+ID_DOFIND               "Find location, last object\nFind"
+ID_VIEW_ZOOMTOFIT       "View whole board in a view\nZoom Fit"
+ID_VIEW_ZOOMTOSELECTION "Zoom the selected device\nZoom Selected"
+ID_VIEW_ACTUALSIZE      "View scale 1:1\n1:1"
+ID_FIND_DEVICE          "Find location of a device\nFind Device"
+ID_FIND_SIGNAL          "Find location a signal (it is maybe a trace,node,net)\nFind Signal"
+ID_FIND_NODE            "Find location of a node (Nxxxx)\nFind Node"
+ID_FIND_NAIL            "Find location of a nail (Fxxxx)\nFind Nail"
+ID_VIEW_TOPDEVICES      "Show/hide top devices\nTop devices"
+ID_VIEW_BOTTOMDEVICES   "Show/hide bottom devices\nBottom devices"
+ID_VIEW_TOPTESTPINS     "Show/hide top testpins\nTop testpins"
+ID_VIEW_BOTTOMTESTPINS  "Show/hide bottom testpins\nBottom testpins"
+ID_VIEW_TRACES          "Show/hide trace(s)\nTrace"
+ID_VIEW_TRACESTOP       "Show/hide top trace(s)\nTop Trace"
+ID_VIEW_TRACESBOT       "Show/hide bottom trace(s)\nBottom Trace"
+ID_VIEW_TRACESIN        "Show/hide inner trace(s)\nInner Trace"
+ID_VIEW_CONNGUIDE       "Show/hide connection guide lines\nConnection Guide"
+ID_TOOLS_OPTIONS        "Open Option dialog box\nOption"
+ID_TOOL_LOCK            "Lock the hilited trace!\nLock"
+ID_TOOL_LOCKADD         "Lock the hilited trace without clear\nLoack Add"
+ID_TOOL_CLEAR           "Unlock the trace\nUnlock"
+ID_VIEW_RESET           "Reset view\nReset view"
+ID_TOOLS_CONNECTION     "Show Connection-Tool box\nConnection"
+ID_VIEW_DEVICES         "Show devices, hide testpins\nShow Devices"
+ID_VIEW_TESTPINS        "Show testpins, hide devices\nShow Testpins"
+ID_VIEW_DEVICESTESTPINS "Show devices and testpins\nShow All"
+IDM_COPYING             "How this software is licensed\nLicense"
+ID_TOOLS_EDIT           "Edit selected device\nEdit"
+ID_TOOLS_MOVEPT2TP0     "Move pointer to 1st testpin\n1st testpin"
+ID_TOOLS_MOVEPT2NEXT    "Move pointer to next testpin\nNext testpin"
+ID_TOOLS_MOVEPT2PREV    "Move pointer to previous testpin\nPrevious testpin"
+ID_TOOLS_MOVEPT2TP9     "Move pointer to last testpin\nLast testpin"
+ID_TOOLS_OFFSET         "Move board to or with deltas\nOffset"
+ID_TOOLS_BOARDORIGIN_LL "Move board origin, lower left to 0,0\nLower-left: 0,0"
+ID_TOOLS_BOARDMOVE_EXTREF "Move board by an external reference\nMove with external"
+END
+
+

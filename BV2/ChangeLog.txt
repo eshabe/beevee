@@ -1,0 +1,65 @@
+This file contain change-log of codes of BeeVee.
+No matter if it is main code (BV2,bv2data) or support code
+
+Sihabul Milah
+
+* Development
+- add not found message in findbar mode
+- add MessageBeep
+--> bv2find.c
+- add import bom/attribute file
+--> bomattr.c
+- via coloring
+--> bv2draw.c, bv2option.c
+- fix click double-components bug
+- add void DrawClearSlection()
+- add 1:1 icon
+- add clear selection by right-click
+--> bv2draw.c
+- add move board origin lower left to 0,0
+- add move board origin by external refrence
+- add offset board
+- add option update
+--> bv2.c
+- add compare placement
+--> bv2.c, cmpdevs.c
+- manip XY in info
+- fix flip trace (objecttrace_cermin) of ARC object
+--> sboard.c
+- add XY in info of data from plx/pls file
+--> agsj50file.c
+- fix mygeneral file reading bug when 'tb' is more than 7 chars
+--> generalxy.c
+
+2.1.0.3 (r03.20070906.0)
+- Fix open-recent sequence. Continued
+- Fix startup drawing.
+-- BV2.c
+-- new function: DoCloseFilePlease()
+- Fix OpenRecents resizing
+-- bv2recents.c
+
+2.1.0.2 (r0.20070903.0)
+- Fix open-recent sequence. Come from 2.1.0
+-- BV2.c
+- Fix draging bug. Open your connection box.
+  Drag start at the box and move to display/view area. BeeVee draw a drag rectangle
+- Add click (for select) tolerance to 5 mils
+- Connection Guide affect to testpins
+- PointerToTestpin move function will move to 1st even it is at 1st, either last
+-- bv2draw.c
+
+2.1.0.1 (r0.20070831.0)
+2.1.0.1 Versioning only appear at app title
+- Fix find nail/node problem. Never add "N"/"F" prefix. Come from 2.1b1, not the earliers.
+-- bv2find.c
+
+2.1.0 (r0.20070830.0)
+First global release
+Second local release
+- Fix genCAD reading. Come from 2.1.0, not 2.1b1 or earlier versions.
+-- gencadfile.c
+
+2.1.0 (r0.20070829.1)
+First local release
+
