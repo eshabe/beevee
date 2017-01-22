@@ -1,0 +1,56 @@
+/*
+    BeeVee: Board viewer application - ECAD Layout reader like.
+    Copyright (C) 2004-2007  Sihabul Milah
+
+    This program is free software; you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation; either version 2 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program; if not, write to the Free Software
+    Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+
+    Sihabul Milah
+    http://eshabe.wordpress.com http://eshabe.blogspot.com
+    eshabe@gmail.com
+    Perumahan Bina Ummah B-15
+    Kibing - Batu Aji
+    Kota Batam - 29432
+    INDONESIA
+*/
+
+#ifndef _SHB_BV2EXPORT_H_
+#define _SHB_BV2EXPORT_H_
+
+#include "sboard.h"
+
+#ifdef  __cplusplus
+extern "C" {
+#endif
+
+typedef struct {
+    int topbot;
+    int orient;
+    int shape;
+    int pn;
+    int info;
+    int unit;
+    int loc;
+    int refdesonly;
+} _explace_option;
+
+
+int exportplacement (boardptr bptr, _sdataptr sptr, char *versi);
+int exportsimpanfile (_sdataptr sptr, char *namafile);
+
+#ifdef  __cplusplus
+}
+#endif
+
+#endif
